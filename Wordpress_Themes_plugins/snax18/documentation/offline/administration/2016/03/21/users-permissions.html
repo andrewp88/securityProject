@@ -1,0 +1,79 @@
+<h2 id="g1docs-users-permissions">Users permissions</h2>
+
+<p>
+    Snax permissions are based on the WordPress roles and capabilities system. Most of necessary configuration is done
+    during plugin activation so, in most cases, you don't need to do anything more.
+</p>
+
+<h3>Roles and capabilities</h3>
+
+<p>
+    Snax provides only one <strong>Snax Author</strong> (snax_author) role and the following capabilites:
+</p>
+<ul>
+    <li><strong>snax_upload_files</strong> - allows users to upload files</li>
+    <li><strong>snax_add_posts</strong> - allows users to create new posts</li>
+    <li><strong>snax_add_items</strong> - allows users to create new submissions</li>
+    <li><strong>snax_delete_items</strong> - allows users to delete their own submissions</li>
+    <li><strong>snax_vote_posts</strong> - allows users to vote on posts</li>
+    <li><strong>snax_vote_items</strong> - allow users to vote on submissions</li>
+</ul>
+
+<h3>Basic configuration</h3>
+
+<p>
+    By default, Wordpress assigns its default role (the <strong>Subsciber</strong> role) to all new users registered on your site.
+    If you don't change that <a href="#g1docs-change-default-user-role">setting</a>, Snax during
+    activation process will change it to the <strong>Snax Author</strong> role. From now, all new users will be able to use Snax.
+    For old users, if you have any, you will need to assign the <strong>Snax Author</strong> role to them manually (or using some 3rd party plugin).
+</p>
+<p>
+    Generally speaking, all your user needs to start using Snax is the <strong>Snax Author</strong> role assigned to him.
+</p>
+
+<h3 id="g1docs-change-default-user-role">How to change default user role (for all new users)?</h3>
+
+<p>To change the role that will be assigned to all new users registered on your site, please follow these simple steps:</p>
+<ol>
+    <li>Go to the <strong>WP admin panel &rsaquo; Settings &rsaquo; General</strong></li>
+    <li>Select the <strong>Snax Author</strong> option in the <strong>New User Default Role</strong> field.</li>
+    <li>Save changes.</li>
+</ol>
+
+<h3 id="g1docs-assign-new-role-to-existing-user">How to assign new role to existing user?</h3>
+
+<p>To assign new role, and keep all current user roles assigned, please do as follows:</p>
+
+<ol>
+    <li>Install and activate the <a href="https://wordpress.org/plugins/members/" target="_blank">Members</a> plugin.</li>
+    <li>Go to the <strong>WP admin panel &rsaquo; Users</strong></li>
+    <li>Choose a user and click it.</li>
+    <li>Scroll down to the <strong>Roles</strong> section.</li>
+    <li>Check the box right next to the role you want to add (<strong>Snax Author</strong> role).</li>
+    <li>Click the <strong>Update User</strong> button</li>
+</ol>
+
+
+<h3>Advanced permissions management</h3>
+
+<p>
+    If the basic configuration is not sufficent for your site, e.g. becuase you have already defined other users permissions,
+    you can use the <a href="https://wordpress.org/plugins/members/" target="_blank">Members</a> plugin to add necessary capabilities
+    to existing roles.
+</p>
+
+<p>
+    Let's say your users (old and new) require to have the <strong>SPECIAL_ROLE</strong> role and you can't change this.
+    It's not a problem, you can assign Snax capabilites to any role you want.
+    To do this, using the <a href="https://wordpress.org/plugins/members/" target="_blank">Members</a> plugin, please follow these steps:
+</p>
+
+<ol>
+    <li>Install and activate the <a href="https://wordpress.org/plugins/members/" target="_blank">Members</a> plugin.</li>
+    <li>Go to the <strong>WP admin panel &rsaquo; Users &rsaquo; Roles</strong></li>
+    <li>Click your <strong>SPECIAL_ROLE</strong> role (or any other role you want to assign Snax capabilites to).</li>
+    <li>Check the box (in the "Grant" column) right beside capabilites with the <strong>snax_</strong> prefix (full list above).</li>
+    <li>Click the <strong>Update</strong> button</li>
+</ol>
+
+

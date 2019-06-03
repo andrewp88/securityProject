@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="Open Lists of WordPress">
+  <meta name="author" content="">
+
+  <title>Snax WordPress Plugin - Documentation</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Our mods -->
+  <link rel="stylesheet" href="css/g1.css">
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link rel="stylesheet" href="css/ie10-viewport-bug-workaround.css">
+  <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <link rel="canonical" href=".//">
+  <link rel="alternate" type="application/rss+xml" title="Snax WordPress Plugin - Documentation" href=".//feed.xml">
+</head>
+
+
+    <body data-spy="scroll" data-target="#navbar">
+
+        <header class="navbar navbar-static-top bs-docs-nav" id="top">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar"
+              aria-controls="bs-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
+              class="icon-bar"></span> <span class="icon-bar"></span>
+      </button>
+      <a href="http://docs.snax.bringthepixel.com" class="navbar-brand">Online Documentation</a>
+    </div>
+
+    <nav id="bs-navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="http://codecanyon.net/item/snax-viral-frontend-uploader/16540363?rel=bringthepixel">Buy Plugin</a></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        <li><a href="http://support.bringthepixel.com">Support</a></li>
+
+        
+            
+            <li><a href="changelog.html">Changelog</a></li>
+            
+        
+            
+        
+            
+        
+            
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<div class="jumbotron g1docs-header">
+  <div class="container">
+    <h1>Snax Documentation</h1>
+    <p>Viral Content Uploader for WordPress</p>
+  </div>
+</div>
+
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-9" role="main">
+
+    <!--------------------->
+    <!-- Getting Started -->
+    <!--------------------->
+
+    <h1 class="page-header" id="g1docs-getting-started">Getting started</h1>
+
+    
+
+        <p class="lead">
+    First of all, we would like to thank you for purchasing our Plugin. If you have any questions that are beyond the scope of this help,
+    please feel free to email us via our user page contact form <a href="http://www.themeforest.net/user/bringthepixel#message" target="_blank">here</a>.
+</p>
+
+<p>
+    We'd be glad to help you if you have any questions related to this plugin. No guarantees, but we'll do our best to assist.
+    If you have a more general question relating to our products you might consider visiting our <a href="http://www.support.bringthepixel.com" target="_blank">support forum</a>.
+</p>
+
+        <hr/>
+
+    
+
+        <h2 id="g1docs-quick-start-guide">Quick-start guide</h2>
+
+<p>For the impatient, here’s how to get the plugin up and running in a second.</p>
+
+<ol>
+    <li>
+        Go to the <strong>WP admin &rsaquo; Plugins &rsaquo; Add New</strong>, upload <strong>snax.zip</strong> and activate it.
+        <a href="#g1docs-installation">Need more details?</a>
+    </li>
+    <li>Under the <strong>WP admin &rsaquo; Settings &rsaquo; Snax &rsaquo; Pages</strong>, click the View button next to the <strong>Frontend Submission</strong> page.</li>
+    <li>Choose what kind of story you want to create (eg. Create open list).</li>
+    <li>Upload an image or paste embed URL, fill in the Title and accept the Terms and Conditions.</li>
+    <li>Click the <strong>Publish</strong> button and voilà, you've just submitted your first post!</li>
+</ol>
+
+
+
+        <hr/>
+
+    
+
+        <h2 id="g1docs-installation">Installation</h2>
+
+<p>Please follow these simple steps to install the plugin and import the demo content in just few clicks.</p>
+
+<ol>
+    <li>Go to the <strong>WP admin panel &rsaquo; Plugins</strong></li>
+    <li>Click the <strong>Add New</strong> button</li>
+</ol>
+
+<br />
+<p><img class="img-responsive" src="img/installation_add_new.png" alt="" /></p>
+<br />
+
+<ol start="3">
+	<li>Click the <strong>Upload Plugin</strong> button</li>
+    <li>Find the <strong>snax.zip</strong> file inside the package you've downloaded from CodeCanyon</li>
+    <li>Upload it</li>
+</ol>
+
+<br />
+<p><img class="img-responsive" src="img/installation_choose_file.png" alt="" /></p>
+<br />
+
+<ol start="6">
+    <li>After few seconds the plugin will be installed.</li>
+    <li>Click the <strong>Activate Plugin</strong> button</li>
+</ol>
+
+<br />
+<p><img class="img-responsive" src="img/installation_activate.png" alt="" /></p>
+<br />
+
+        <hr/>
+
+    
+
+        <h2 id="g1docs-workflow">Basic workflow</h2>
+
+<h3 id="g1docs-post-vs-submission">Post vs. Submission</h3>
+
+<p>
+    Snax workflow is based on two main concepts, Posts and Submissions.
+    Before further reading, you should first get to know what they are and what's the main difference between them.
+</p>
+<p>
+    <strong>Posts</strong> - you can think of them as standard Wordpres posts. Besides plugin related options, they work in pretty much the same way.<br />
+    Example: User creates new "Open List". Other users may contribute to it.
+</p>
+<p>
+    <strong>Submissions</strong> - children of a post. They are similar, in behaviour, to posts but cannot exist alone.<br />
+    Example: User adds new "Submission" to an existing open list.
+</p>
+
+
+<h3>Add new post</h3>
+
+<p>Here's how the standard submission process, from post creation to final approval, works:</p>
+<ol>
+    <li>User clicks the "+ Create" button.</li>
+    <li>Choose one of available formats (e.g. Create open list).</li>
+    <li>Upload images or add embeds.</li>
+    <li>Fill required fields and submit a post for a review.</li>
+    <li>Now, the submitted post is waiting for your approval in the <a href="#g1docs-review-submissions">review queue</a>.</li>
+    <li>At this stage, only you (as administrator) and post author (as owner) have access to it.</li>
+    <li>Until you publish this post, it won't be publicly accessible for all other visitors.</li>
+    <li>To allow direct publishing, please read the <a href="#g1docs-users-permissions">Users permissions</a> section.</li>
+</ol>
+
+<h3>Add new submission</h3>
+
+<p>Here are steps involved in new contribution process:</p>
+<ol>
+    <li>User visits one of the existing open lists.</li>
+    <li>After all items, there's a new item form.</li>
+    <li>User uploads an image or adds an embed.</li>
+    <li>Fill required fields and submit an item for a review.</li>
+    <li>Now, the submitted item is waiting for your approval in the <a href="#g1docs-review-submissions">review queue</a>.</li>
+    <li>At this stage, only you (as administrator) and item author (as owner) have access to this item.</li>
+    <li>Until you publish this item, it won't be publicly accessible for all other visitors.</li>
+    <li>To allow direct publishing, please read the <a href="#g1docs-users-permissions">Users permissions</a> section.</li>
+</ol>
+        <hr/>
+
+    
+
+    <!------------->
+    <!-- Profile -->
+    <!------------->
+
+    <h1 class="page-header" id="g1docs-profile">Profile</h1>
+
+    
+
+    <h2 id="g1docs-use-buddypress">Use the BuddyPress plugin</h2>
+
+<p>
+    When you think about users, relations between them and entire community they are part of,
+    most likely the first thing that come up to your mind is the <a href="https://wordpress.org/plugins/buddypress/" target="_blank">BuddyPress</a> plugin.
+</p>
+
+<p>
+    <a href="https://wordpress.org/plugins/buddypress/" target="_blank">BuddyPress</a> is the most popular Wordpress plugin for online communities, so the choice tends to be obvious.
+</p>
+
+<h3>What Snax has to do with BuddyPress?</h3>
+
+<p>
+    We always try to give you possibility to best adapt our products to your site. The more compatible the product is with other well known Wordpress plugins the more options
+    to combine them you have. If so, what can be more capable to adjust that the plugin with 200K+ community and almost 100 of plugins wrote just for it!
+</p>
+<p>
+    Snax is a way to get your community more involved. BuddyPress is a best choice for communities. Both create perfect combination.
+    And that's why the Snax is fully integrated with the BuddyPress.
+</p>
+
+<h3>Snax + BuddyPress</h3>
+
+<p>
+    Using BuddyPress as your Snax community partner, your users can use BuddyPress profiles to:
+</p>
+<ul>
+    <li>manage their posts</li>
+    <li>check status of posts that are still under review process</li>
+    <li>quickly access all submissions (items added to someone else open list)</li>
+    <li>check pending/rejected submissions</li>
+    <li>see all upvotes and downvotes</li>
+    <li>be notified about others actions (e.g. when your post was voted)</li>
+    <li>see all their activities (e.g. when you add a new item to someone else list)</li>
+</ul>
+
+<h3 id="g1docs-is-buddypress-required">Can I use Snax without BuddyPress?</h3>
+
+<p>
+    Using BuddyPress it's not a requirement. You have still, as site owner, full access to all posts/submissions added by users using traditional Wordpress admin area.
+    The only difference is that your users don't have profiles so until you accept their items, they can't see them, check their status etc.
+</p>
+    <hr/>
+
+    
+
+    <h2 id="g1docs-setup-buddypress">Setup the BuddyPress plugin</h2>
+
+<h3>Start with BuddyPress</h3>
+
+<p>
+    If you are not already familar with the BuddyPress plugin, you probalby want to learn all about it before you start playing with the Snax.
+    There are a lot of useful guides on the web but we recommend <a href="https://premium.wpmudev.org/blog/buddypress-guide/" target="_blank">The Complete Guide to BuddyPress for WordPress</a>.
+</p>
+
+<h3>Start with Snax</h3>
+
+<p>
+    To start using Snax and BuddyPress you don't need to do any special configuration steps. Just install BuddyPress and Snax will do the rest.
+    The order of plugin installation doesn't matter. You can have BuddyPress already installed or install it after Snax.
+</p>
+
+<h3>Turn on/off Snax components</h3>
+
+<p>
+    By default, Snax enables all its components (Posts, Submissions, Votes). Of course it always depends on you, what components you want to use.
+    To change default configuration, please do as follows:
+</p>
+<ol>
+    <li>Go to the <strong>WP admin &rsaquo; Settings &rsaquo; BuddyPress</strong>.</li>
+    <li>In the <strong>Components</strong> tab, you will find all Snax components (name with the "Snax" prefix).</li>
+    <li>For example, if you don't like to use the <strong>Snax Submissions</strong> component, just uncheck it.</li>
+</ol>
+
+<br />
+<p><img class="img-responsive" src="img/buddypress_components.png" alt="" /></p>
+
+<h3 id="g1docs-do-i-need-all-buddypress-components">Do I need to use all other BuddyPress components?</h3>
+
+<p>
+    No, you don't need to use any additional components delivered with the BuddyPress. BuddyPress requires two components:
+    <strong>BuddyPress Core</strong> and <strong>Comunnity Members</strong> and that's all. All others are optional.
+</p>
+
+
+
+
+    <hr/>
+
+    
+
+    <!------------------>
+    <!-- Social Login -->
+    <!------------------>
+
+    <h1 class="page-header" id="g1docs-social-login">Social Login</h1>
+
+    
+
+    <h2 id="g1docs-use-wp-social-login">Use the Wordpress Social Login plugin</h2>
+
+<p>
+    With the <a href="https://wordpress.org/plugins/wordpress-social-login/" target="_blank">WordPress Social Login</a> plugin, you give your visitors
+    an ability to login with social networks like Facebook, Twitter and more.
+    No more old fashioned registration form and confirmation emails!
+    No one wants to create a new account just to check what your site has to offer. Don't make this mistake and don't try to change users habits.
+</p>
+
+<h3>Snax + WP Social Login</h3>
+
+<p>
+    Using WP Social Login as your Snax login/register service, your users <strong>DON'T NEED TO</strong>:
+</p>
+<ul>
+    <li>create a new account</li>
+    <li>fill out registration forms</li>
+    <li>wait for confirmation emails</li>
+    <li>remember another usernames and passwords</li>
+</ul>
+
+<h3 id="g1docs-is-wp-social-login-required">Can I use Snax without WP Social Login?</h3>
+
+<p>
+    Yes, of course you can use the Snax without any 3rd party login plugins. But believe us, you don't want to do that.
+    Nowadays, for most users creation of a new account seems hard to overcome. If user needs to register when he only wants
+    to check how a site works, it will probaly quickly leave it. And that's the last thing you want.
+</p>
+    <hr/>
+
+    
+
+    <h2 id="g1docs-setup-wp-social-login">Setup the Wordpress Social Login plugin</h2>
+
+<p>
+    Social Login requires a little bit of effort on your part to have it up and running in your website.
+    As a matter of control and security, Google, Facebook, Twitter, etc., will require you to apply for an application first.
+    Generally speaking, registering a new application is <strong>free</strong> and only takes a <strong>few minutes</strong>.
+</p>
+
+<h3>Social Networks Setup</h3>
+
+<p>
+    To configure your preferred login channels, please do as follows:
+</p>
+<ol>
+    <li>Go to the <strong>WP admin &rsaquo; Settings &rsaquo; General</strong> and check the <strong>Anyone can register</strong> box to allow creating new user accounts.</li>
+    <li>Go to the <strong>WP admin &rsaquo; Settings &rsaquo; WP Social Login</strong>.</li>
+    <li>Choose the <strong>Networks</strong> tab, and follow <a href="http://miled.github.io/wordpress-social-login/networks.html" target="_blank">Social Networks Setup</a> guide to set them up.</li>
+    <li>If you need to add more providers, use the sidebar on the right.</li>
+    <li>Now to load big social buttons, go to the <strong>WP admin &rsaquo; Settings &rsaquo; WP Social Login &rsaquo; Widget</strong> and choose the option <strong>None, display providers names instead of icons</strong> for the <strong>Social Icon Set.</strong>.</li>
+</ol>
+
+<p>
+    For more information about plugin configuration and more advanced options,
+    please refer to the <a href="http://miled.github.io/wordpress-social-login/documentation.html" target="_blank">WordPress Social Login Documentation</a>.
+</p>
+
+    <hr/>
+
+    
+
+    <!------------->
+    <!-- Quizzes -->
+    <!------------->
+
+    <h1 class="page-header" id="g1docs-quizzes">Quizzes</h1>
+
+    
+
+    <h2 id="g1docs-set-up-quizzes">Set up quizzes</h2>
+
+<p>
+    There are two types of quizzes:
+</p>
+<ul>
+    <li><strong>frontend</strong> - behave like other Snax formats</li>
+    <li><strong>backend</strong> - behave like any custom post type</li>
+</ul>
+
+<h3>How to enable frontend quizzes?</h3>
+
+<p>
+    As with other Snax formats, you need to activate quizzes (both Trivia and Personality) in <strong>WP admin panel &rsaquo; Settings &rsaquo; Snax &rsaquo; General &rsaquo; Active formats</strong> before your users will be able to use them.
+</p>
+
+<h3>How to enable backend quizzes?</h3>
+
+<p>
+    You don't need to activate backend quizzes. When Snax is activated the quizzes are accessible via <strong>WP admin panel &rsaquo; Quizzes</strong>.
+</p>
+
+    <hr/>
+
+    
+
+    <h2 id="g1docs-frontend-quiz">Create a quiz on frontend</h2>
+
+
+<p>
+    Frontend quiz can be created by a user with "Snax Author" role assigned. To create a new quiz please go to the
+    <strong>Frontend Submission</strong> page and choose one of available quiz types.
+</p>
+
+<br />
+<p><img class="img-responsive" src="img/quiz_frontend_selection.jpg" alt="" /></p>
+<br />
+
+
+    <hr/>
+
+    
+
+    <h2 id="g1docs-backend-quiz">Create a quiz on backend</h2>
+
+<p>
+    Backend quiz can be created by site's administrator (or other roles with edit posts capability). To create a new quiz please go to the
+    <strong>WP Admin panel &rsaquo; Quizzes &rsaquo; Add new</strong> and choose one of available types.
+</p>
+
+<br />
+<p><img class="img-responsive" src="img/quiz_backend_selection.jpg" alt="" /></p>
+<br />
+
+    <hr/>
+
+    
+
+    <h2 id="g1docs-share-to-unlock">Share quiz to Facebook to unlock results</h2>
+
+<p>
+    You can spread your quizzes more quickly across the web if your users will share them on the Facebook.
+    Snax gives you an option to force users to do that, if they want to see their results.
+</p>
+
+<p>
+    To force users to share quiz to Facebook before seeing the results, please do as follows:
+</p>
+
+<ol>
+    <li>Go to the <strong>WP Admin panel &rsaquo; Quizzes</strong> and choose a quiz for which you want to enable that option</li>
+    <li>On a quiz edition panel, choose the <strong>Settings</strong> tab</li>
+    <li>Set the option <strong>User have to share the quiz to see results?</strong> to "yes"</li>
+    <li>Now, you need to set the Facebook App Id to allow sharing</li>
+    <li>Go to the <strong>WP admin panel &rsaquo; Settings &rsaquo; Snax</strong></li>
+    <li>Choose the <strong>General</strong> tab</li>
+    <li>Set the <strong>Facebook App Id</strong> option (use the <a href="https://developers.facebook.com/docs/apps/register" target="_blank">Register and Configure an App</a> guide for help)</li>
+</ol>
+
+
+    <hr/>
+
+    
+
+    <!------------------->
+    <!-- Configuration -->
+    <!------------------->
+
+    <h1 class="page-header" id="g1docs-configuration">Configuration</h1>
+
+    
+
+    <h2 id="g1docs-general-info">General</h2>
+
+<p class="lead">
+    All Snax configuration options are located under <strong>WP admin panel &rsaquo; Settings &rsaquo; Snax</strong>.
+</p>
+
+<p>
+    They are divided into separate sections:
+</p>
+<ol>
+    <li>General configuration.</li>
+    <li>Lists related settings.</li>
+    <li>Pages setup.</li>
+    <li>Demo mode. Useful for quick start and testing purposes.</li>
+</ol>
+
+<h3>Single options</h3>
+
+<p>
+    Options specific for a single <strong>Post</strong> (open list, gallery etc) or <strong>Submission</strong> can be adjusted directly on its edit page.<br />
+    Under the WP content edition you will always find, if applicable, metabox called <strong>Snax</strong>.
+</p>
+    <hr/>
+
+    
+
+    <h2 id="g1docs-post-formats">Post Formats</h2>
+
+<p>
+    Snax is delivered with the following post formats:
+</p>
+<ol>
+    <li><strong>Open List</strong>. For images and/or embeds. Users can contribute by submitting new items. Ranking (order) is based on votes.</li>
+    <li><strong>Ranked List</strong>. For images and/or embeds. Users can't contribute. Ranking (order) is based on votes.</li>
+    <li><strong>Classic List</strong>. For images and/or embeds. Users can't contribute. Ranking (order) is set by list author.</li>
+    <li><strong>Story</strong>. Best for text stories, similar to WordPress posts.</li>
+    <li><strong>Gallery</strong>. Best for photo stories.</li>
+    <li><strong>Image</strong>. For a single image.</li>
+    <li><strong>Embed</strong>. For a single YouTube, Twitter, Instagram content.</li>
+    <li><strong>Meme</strong>. For a funny image with top and bottom texts.</li>
+    <li><strong>Trivia Quiz</strong>. For quick yes/no quiz.</li>
+    <li><strong>Personality</strong>. For a test to know who/what are you similar to.</li>
+</ol>
+
+<h3>Deactivating formats</h3>
+
+<p>
+    There's no need to use all available formats. If your site is focused just on funny images and you don't want to embed any Youtube video there,
+    you can simply disable the <strong>Embed</strong> format. To disable unwanted format, please follow these simple steps:
+</p>
+
+<ol>
+    <li>Go to the <strong>WP admin panel &rsaquo; Snax</strong>.</li>
+    <li>Choose the <strong>General</strong> section.</li>
+    <li>Uncheck the box right beside that format.</li>
+    <li>Save changes.</li>
+</ol>
+    <hr/>
+
+    
+
+    <h2 id="g1docs-item-forms">Item Forms</h2>
+
+<p>
+    Item forms are types of content users can add to existing lists. By default, these are <strong>New Image</strong> and <strong>New Embed</strong> forms.
+    If you want to have a list consists of only images, you can disable the <strong>Embed</strong> form and that's all.
+</p>
+
+<h3>Global Setup</h3>
+
+<p>
+    To configure forms globally, please do as follows:
+</p>
+
+<ol>
+    <li>Go to the <strong>WP admin panel &rsaquo; Snax</strong>.</li>
+    <li>Switch to the <strong>Lists</strong> tab.</li>
+    <li>Uncheck all forms you don't want to use.</li>
+    <li>Save changes.</li>
+</ol>
+
+<h3>Single List Setup</h3>
+
+<p>
+    If you want to override global setup, just for one or few lists, please follow these steps:
+</p>
+
+<ol>
+    <li>Go to the <strong>WP admin panel &rsaquo; Posts</strong>.</li>
+    <li>Find your list (using filters and search form).</li>
+    <li>Go to its edit page.</li>
+    <li>In the <strong>Snax</strong> metabox, check the "Change Default Forms" field.</li>
+    <li>Uncheck all forms you don't want to use.</li>
+    <li>Save changes.</li>
+</ol>
+
+
+
+    <hr/>
+
+    
+
+    <h2 id="g1docs-pages">Pages</h2>
+
+<p>
+    Snax requires only one custom page to work. It's the <strong>Frontend Submission</strong> page. It's a start point to create any new post (Open List, Embed etc.).
+</p>
+
+<p>
+    Other pages are optional. These are:
+</p>
+<ul>
+    <li><strong>Terms and Conditions</strong> - frontend submission rules and privacy policy.</li>
+    <li><strong>Report</strong> - page on which you can put some contact form to get feedback from users about all kind of abuses.</li>
+</ul>
+
+<h3>Setup</h3>
+
+<p>
+    The <strong>Frontend Submission</strong> page is created and assigned during plugin installation. Only optional pages have to be created manually.
+    Please follow these simple steps to set them up:
+</p>
+
+<ol>
+    <li>Go to the <strong>WP admin panel &rsaquo; Pages &rsaquo; Add New</strong> and create a new page (e.g. Report).</li>
+    <li>Fill its content (add a contact form, describe rules to follow etc).</li>
+    <li>Publish page.</li>
+    <li>Now, go to the <strong>WP admin panel &rsaquo; Snax</strong>.</li>
+    <li>Switch to the <strong>Pages</strong> section.</li>
+    <li>Assign your newly created page to the relevant field.</li>
+    <li>Save changes.</li>
+</ol>
+    <hr/>
+
+    
+
+    <h2 id="g1docs-post-titles">Post Titles</h2>
+
+<p>
+    Snax adds post format related information to Wordpress post titles.
+</p>
+
+<p>For the <strong>Open List</strong> post format it will be (example below):</p>
+<ul>
+    <li>already submitted items count</li>
+    <li>list status (open | closed for submission)</li>
+</ul>
+
+<p style="font-size: 20px; padding: 20px 0; color: #777777;">Can You Get Through These <strong>20+</strong> Sexy Photos Without Saying WOW <strong>(Open for submission)</strong>?</p>
+
+<p>For the <strong>Gallery</strong> post format it will be (example below):</p>
+<ul>
+    <li>number of gallery items</li>
+</ul>
+
+<p style="font-size: 20px; padding: 20px 0; color: #777777;">Why my last holidays turned into a trip of my life <strong>(10 photos)</strong></p>
+
+<h3>Setup</h3>
+
+<p>
+    To enable/disable post titles parts, please follow these steps:
+</p>
+
+<ol>
+    <li>Go to the <strong>WP admin panel &rsaquo; Snax</strong>.</li>
+    <li>Choose the <strong>General</strong> section.</li>
+    <li>Check/uncheck the <strong>Show items count in title</strong> to show/hide items count.</li>
+    <li>Choose the <strong>Lists</strong> section.</li>
+    <li>Check/uncheck the <strong>Show list status in title</strong> to show/hide list status.</li>
+    <li>Save changes.</li>
+</ol>
+
+<p>
+    To change items count position from the beginning of a post, please do as follows:
+</p>
+
+<ol>
+    <li>Go to the <strong>WP admin panel &rsaquo; Posts</strong>.</li>
+    <li>Choose one of your list (or gallery) posts.</li>
+    <li>To a post title, add the <code>%%items%%</code> placeholder in the place you want to show counter.</li>
+</ol>
+
+<br />
+<p><img class="img-responsive" src="img/posts_title_placeholder.png" alt="" /></p>
+<br />
+
+<ol start="4">
+    <li>Update post.</li>
+    <li>Snax will replace that placeholder with a real value.</li>
+</ol>
+
+
+
+    <hr/>
+
+    
+
+    <h2 id="g1docs-voting">Voting</h2>
+
+<p>
+    Voting system allows users to upvote/downvote every post that was created using Snax uploader (List, Gallery, Story etc).
+</p>
+
+<h3>Disable voting</h3>
+
+<p>
+    To disable voting globally, please do as follows:
+</p>
+
+<ol>
+    <li>Go to the <strong>WP admin panel &rsaquo; Snax</strong>.</li>
+    <li>Switch to the <strong>Voting</strong> section.</li>
+    <li>Uncheck the <strong>Voting enabled?</strong> option.</li>
+    <li>Save changes.</li>
+</ol>
+
+<h3>Allow users to vote on other post types</h3>
+
+<p>
+    To allow users to vote on a post that is not any of Snax formats, please do as follows:
+</p>
+
+<ol>
+    <li>Go to the <strong>WP admin panel &rsaquo; Snax</strong>.</li>
+    <li>Switch to the <strong>Voting</strong> section.</li>
+    <li>Make sure that the <strong>Voting enabled?</strong> option is checked.</li>
+    <li>Check all post types that can be voted</li>
+    <li>Save changes.</li>
+</ol>
+
+<h3>Fake votes</h3>
+
+<p>
+    New posts start with votes counter set to 0. It doesn't look good and it doesn't attract your visitors.
+    The "Fake votes" feature will help you solve that problem.
+</p>
+
+<h4>Use auto-calculation</h4>
+<p>
+    Automatic votes calculation gets into account post publish date. At first votes counter won't be equal to value you set as <strong>Fake vote count base</strong> (see below) but will
+    be only 10% of it. The counter will reach the final value after 30 days which makes it look more natural during post lifetime. To enable auto-calculation, please do as follows:
+</p>
+
+<ol>
+    <li>Go to the <strong>WP admin panel &rsaquo; Snax</strong>.</li>
+    <li>Switch to the <strong>Voting</strong> section.</li>
+    <li>Make sure that the <strong>Voting enabled?</strong> option is checked.</li>
+    <li>Set the <strong>Fake vote count base</strong> value. Be aware that </li>
+    <li>Save changes.</li>
+</ol>
+
+<h4>Set exact votes value per post</h4>
+
+<p>
+    If you prefer to set votes counter to an exact value, regardless of the "Fake vote count base" value, please do as follows:
+</p>
+
+<ol>
+    <li>Go to the <strong>WP admin panel &rsaquo; Posts</strong>.</li>
+    <li>Open your target post to edit.</li>
+    <li>Scroll down to the <strong>Fake votes</strong> metabox.</li>
+    <li>Set the <strong>Fake vote count</strong> value.</li>
+    <li>Update post.</li>
+</ol>
+    <hr/>
+
+    
+
+    <h2 id="g1docs-demo-mode">Demo Mode</h2>
+
+<p>
+    The demo mode is the fastest way to start playing with frontend submission. Thanks to it,
+    you don't need to upload new images/embeds all the time you want to test submission process.
+</p>
+
+<h3>Setup</h3>
+
+<p>
+    To enable demo mode, please do as follows:
+</p>
+
+<ol>
+    <li>Go to the <strong>WP admin panel &rsaquo; Snax</strong>.</li>
+    <li>Switch to the <strong>Demo</strong> section.</li>
+    <li>Check the <strong>Demo mode enabled?</strong> box.</li>
+    <li>From the Media Library choose (or upload new ones) images that will be used as your demo images.</li>
+    <li>Fill in embed URL and choose post image if you want to test embeds.</li>
+    <li>Now, when you create a new post, demo data will show up under the upload image/embeb form.</li>
+    <li>Save changes.</li>
+</ol>
+
+
+
+
+    <hr/>
+
+    
+
+    <!------------------->
+    <!-- Administation -->
+    <!------------------->
+
+    <h1 class="page-header" id="g1docs-administration">Administration</h1>
+
+    
+
+    <h2 id="g1docs-review-submissions">Review new posts and submissions</h2>
+
+<p>
+    When user creates a new post/submission, new item is not published immediately.
+    Lack of verification it is not a good idea and most likely you want to know what is added to your site.
+    That's why before any new item will be accessible for your visitors, it's waiting for moderation in the review queue.
+</p>
+
+<h3>How to approve new post?</h3>
+
+<p>To change post status from pending (in the review queue) to published (visible on site), please follow these simple steps:</p>
+
+<ol>
+    <li>Go to the <strong>WP admin panel &rsaquo; Posts</strong>.</li>
+    <li>Click the <strong>Pending</strong> tab.</li>
+    <li>Choose the <strong>Snax: All formats</strong> option and click <strong>Filter</strong>.</li>
+    <li>From list of pending posts, choose one and go to its edit page.</li>
+    <li>Verify it and if all is fine, click the <strong>Publish</strong> button</li>
+</ol>
+
+
+<h3>How to approve new submission?</h3>
+
+<p>To change submission status from pending to published, please follow these simple steps:</p>
+
+<ol>
+    <li>Go to the <strong>WP admin panel &rsaquo; Snax Items</strong>.</li>
+    <li>Click the <strong>Pending</strong> tab.</li>
+    <li>From filtered list of pending submissions, choose one and go to its edit page.</li>
+    <li>Verify it and if all is fine, click the <strong>Publish</strong> button</li>
+</ol>
+
+<p></p>
+
+<h3>How to skip verification step?</h3>
+
+<p>
+    To allow user to create and publish new post/submission immediately, please do as follows:
+</p>
+
+<ol>
+    <li>Go to the <strong>WP admin panel &rsaquo; Settings &rsaquo; Snax</strong>.</li>
+    <li>Click the <strong>General</strong> tab.</li>
+    <li>Set the <strong>Skip verification</strong> option to "yes".</li>
+</ol>
+
+<h3>How will I know when new post/item is submitted?</h3>
+
+<p>
+    When a user create a new post or contribute to an existing list, you will get an mail about that action.
+</p>
+<p>
+    Mail notifications are sent to site's administrator and if you don't want to receive them,
+    you can disable them via <strong>WP admin panel &rsaquo; Settings &rsaquo; Snax &rsaquo; General &rsaquo; Send mail to admin when new post/item was added?</strong> option.
+</p>
+
+    <hr/>
+
+    
+
+    <h2 id="g1docs-users-permissions">Users permissions</h2>
+
+<p>
+    Snax permissions are based on the WordPress roles and capabilities system. Most of necessary configuration is done
+    during plugin activation so, in most cases, you don't need to do anything more.
+</p>
+
+<h3>Roles and capabilities</h3>
+
+<p>
+    Snax provides only one <strong>Snax Author</strong> (snax_author) role and the following capabilites:
+</p>
+<ul>
+    <li><strong>snax_upload_files</strong> - allows users to upload files</li>
+    <li><strong>snax_add_posts</strong> - allows users to create new posts</li>
+    <li><strong>snax_add_items</strong> - allows users to create new submissions</li>
+    <li><strong>snax_delete_items</strong> - allows users to delete their own submissions</li>
+    <li><strong>snax_vote_posts</strong> - allows users to vote on posts</li>
+    <li><strong>snax_vote_items</strong> - allow users to vote on submissions</li>
+</ul>
+
+<h3>Basic configuration</h3>
+
+<p>
+    By default, Wordpress assigns its default role (the <strong>Subsciber</strong> role) to all new users registered on your site.
+    If you don't change that <a href="#g1docs-change-default-user-role">setting</a>, Snax during
+    activation process will change it to the <strong>Snax Author</strong> role. From now, all new users will be able to use Snax.
+    For old users, if you have any, you will need to assign the <strong>Snax Author</strong> role to them manually (or using some 3rd party plugin).
+</p>
+<p>
+    Generally speaking, all your user needs to start using Snax is the <strong>Snax Author</strong> role assigned to him.
+</p>
+
+<h3 id="g1docs-change-default-user-role">How to change default user role (for all new users)?</h3>
+
+<p>To change the role that will be assigned to all new users registered on your site, please follow these simple steps:</p>
+<ol>
+    <li>Go to the <strong>WP admin panel &rsaquo; Settings &rsaquo; General</strong></li>
+    <li>Select the <strong>Snax Author</strong> option in the <strong>New User Default Role</strong> field.</li>
+    <li>Save changes.</li>
+</ol>
+
+<h3 id="g1docs-assign-new-role-to-existing-user">How to assign new role to existing user?</h3>
+
+<p>To assign new role, and keep all current user roles assigned, please do as follows:</p>
+
+<ol>
+    <li>Install and activate the <a href="https://wordpress.org/plugins/members/" target="_blank">Members</a> plugin.</li>
+    <li>Go to the <strong>WP admin panel &rsaquo; Users</strong></li>
+    <li>Choose a user and click it.</li>
+    <li>Scroll down to the <strong>Roles</strong> section.</li>
+    <li>Check the box right next to the role you want to add (<strong>Snax Author</strong> role).</li>
+    <li>Click the <strong>Update User</strong> button</li>
+</ol>
+
+
+<h3>Advanced permissions management</h3>
+
+<p>
+    If the basic configuration is not sufficent for your site, e.g. becuase you have already defined other users permissions,
+    you can use the <a href="https://wordpress.org/plugins/members/" target="_blank">Members</a> plugin to add necessary capabilities
+    to existing roles.
+</p>
+
+<p>
+    Let's say your users (old and new) require to have the <strong>SPECIAL_ROLE</strong> role and you can't change this.
+    It's not a problem, you can assign Snax capabilites to any role you want.
+    To do this, using the <a href="https://wordpress.org/plugins/members/" target="_blank">Members</a> plugin, please follow these steps:
+</p>
+
+<ol>
+    <li>Install and activate the <a href="https://wordpress.org/plugins/members/" target="_blank">Members</a> plugin.</li>
+    <li>Go to the <strong>WP admin panel &rsaquo; Users &rsaquo; Roles</strong></li>
+    <li>Click your <strong>SPECIAL_ROLE</strong> role (or any other role you want to assign Snax capabilites to).</li>
+    <li>Check the box (in the "Grant" column) right beside capabilites with the <strong>snax_</strong> prefix (full list above).</li>
+    <li>Click the <strong>Update</strong> button</li>
+</ol>
+
+
+
+    <hr/>
+
+    
+
+    <!------------------->
+    <!-- Miscellaneous -->
+    <!------------------->
+
+    <h1 class="page-header" id="g1docs-misc">Miscellaneous</h1>
+
+    
+
+    <h2 id="g1docs-sources-credits">Sources and Credits</h2>
+
+<h3>JavaScripts</h3>
+<ul>
+    <li><a href="http://jquery.com/" target="_blank">jQuery</a> - JavaScript Framework</li>
+    <li><a href="http://timeago.yarp.com" target="_blank">Timeago</a> - convert date into fuzzy timestamps</li>
+    <li><a href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank">Magnific Popup</a> - responsive lightbox</li>
+    <li><a href="http://aehlke.github.io/tag-it/">Tag-it!</a> - tag editing widget</li>
+</ul>
+<h3>Fonts</h3>
+<ul>
+    <!-- @todo -->
+    <li><a href="http://www.google.com/fonts/">Google Fonts</a> - free, open source fonts</li>
+    <li><a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a> - the iconic font and CSS toolkit</li>
+</ul>
+    <hr/>
+
+    
+
+    <h2 id="g1docs-javascript-files">JavaScript files</h2>
+
+<p>The main power behind this plugin is the famous javascript framework <a href="http://jquery.com/">jQuery</a>.</p>
+
+<p>The plugin uses:</p>
+<ul>
+    <li>front.js - plugin specific functions and initializations (frontend side)</li>
+    <li>front-submission.js - user submission (new post) specific functions (frontend side)</li>
+    <li>add-to-list.js - user submission (contribution) specific functions (frontend side)</li>
+    <li>admin.js - plugin specific functions and initializations (admin side)</li>
+</ul>
+
+<p>All used 3rd party scripts are listed on the <a href="#g1docs-sources-credits">Sources and Credits</a> page.</p>
+    <hr/>
+
+    
+
+    <h2 id="g1docs-css-files">CSS files</h2>
+
+<h4>Reset Styles</h4>
+<p>The first rules in <strong>main.css</strong> file are generic reset rules. Many browser interpret the default behavior of html elements differently. By using a general reset styles, we can work round this.</p>
+<h4>General Styles</h4>
+<p>The main css file <strong>main.css</strong> is separated into sections:</p>
+<ol>
+    <li>
+        Settings
+        <ol>
+            <li>Global</li>
+        </ol>
+    </li>
+    <li>
+        Tools
+        <ol>
+            <li>Functions</li>
+            <li>Mixins</li>
+        </ol>
+    </li>
+    <li>
+        Generic
+        <ol>
+            <li>Reset</li>
+        </ol>
+    </li>
+    <li>
+        Elements
+        <ol>
+            <li>Default</li>
+            <li>Forms</li>
+        </ol>
+    </li>
+    <li>
+        Objects
+        <ol>
+            <li>Grid</li>
+            <li>Fluid wrapper</li>
+        </ol>
+    </li>
+    <li>
+        Components
+    </li>
+</ol>
+<p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited. Sections are marked as follows:</p>
+<pre>/**
+ * 1 . SAMPLE SECTION NAME
+ */</pre>
+    <hr/>
+
+    
+
+    <h2 id="g1docs-folder-structure">Folder Structure</h2>
+
+<p>After unzipping the file downloaded from the CodeCanyon you'll see the following folder structure:</p>
+<ul>
+    <li><strong>snax</strong> - plugin files - in case you want to upload the plugin through the FTP</li>
+    <li><strong>snax.zip</strong> - zipped plugin files - in case you want to upload the plugin through the WordPress admin</li>
+    <li><strong>changelog.txt</strong> - releases history</li>
+    <li><strong>Documentation</strong> - an entry point to the online documentation. Online version it's always up to date.</li>
+    <li><strong>License</strong> - licensing files</li>
+    <li><strong>Licensing</strong> - licensing files</li>
+</ul>
+    <hr/>
+
+    
+
+    <h2 id="g1docs-custom-widgets">Custom Widgets</h2>
+
+<p>The Plugin comes with some custom widgets ready to use. All custom widgets names start with the <strong>Snax</strong> prefix.</p>
+
+<p>All available widgets can be found in the <strong>WP Admin &rsaquo; Appearance &rsaquo; Widgets</strong>.</p>
+    <hr/>
+
+    
+
+    <!--------->
+    <!-- FAQ -->
+    <!--------->
+
+    <h1 class="page-header" id="g1docs-faq">FAQ</h1>
+
+    
+
+    <h2 id="g1docs-faq-update-plugin">How to update plugin?</h2>
+
+<h3>Automatic updates</h3>
+
+<p>
+    To use automatic updates you need the Envato Market plugin. You can do that now via <strong>WordPress Admin &rsaquo; Appearance &rsaquo; Install Plugins</strong> or <strong>WordPress Admin &rsaquo; Plugins &rsaquo; Install Plugins</strong> panel.<br />
+    After installing, go to the <strong>WordPress Admin &rsaquo; Envato Market</strong> and enter your token.
+    If you don't have it, you can generate new one by clicking the <a href="https://build.envato.com/create-token/?purchase:download=t&purchase:verify=t&purchase:list=t" target="_blank">generate a personal token</a> link in the <strong>Global OAuth Personal Token</strong> section.
+</p>
+
+<h3>Manual updates</h3>
+
+<p>
+    If, for some reasons, you can't use automatic updates, you can always use default way to update the plugin.
+    When new update will be released, the CodeCanyon will notify you about that so you can download new package and install it manually,
+    via <strong>WP admin panel &rsaquo; Plugins &rsaquo; Add new</strong>.
+</p>
+
+    <hr/>
+
+    
+
+    <h2 id="g1docs-faq-post-vs-submission"><a href="#g1docs-post-vs-submission">What's the difference between Post and Submission?</a></h2>
+    <hr/>
+
+    
+
+    <h2 id="g1docs-post-formats"><a href="#g1docs-is-buddypress-required">Do I need the BuddyPress plugin?</a></h2>
+    <hr/>
+
+    
+
+    <h2 id="g1docs-post-formats"><a href="#g1docs-is-wp-social-login-required">Do I need the Wordpress Social Login plugin?</a></h2>
+    <hr/>
+
+    
+
+    <h2 id="g1docs-faq-change-default-user-role"><a href="#g1docs-change-default-user-role">How to change default user role (for all new users)?</a></h2>
+    <hr/>
+
+    
+
+    <h2 id="g1docs-faq-assign-new-role-to-existing-user"><a href="#g1docs-assign-new-role-to-existing-user">How to assign new role to existing user?</a></h2>
+    <hr/>
+
+    
+
+    <h2 id="g1docs-faq-assign-new-role-to-existing-user"><a href="#g1docs-do-i-need-all-buddypress-components">Do I need to use all other BuddyPress components?</a></h2>
+    <hr/>
+
+    
+
+    <!--------------------->
+    <!-- Troubleshooting -->
+    <!--------------------->
+
+    <h1 class="page-header" id="g1docs-troubleshooting">Troubleshooting</h1>
+
+    
+
+    <h2 id="g1docs-troubleshooting-quiz-actions-dont-work">Quiz actions don't work</h2>
+
+<h3>Problem</h3>
+
+<p>
+    Quizzes core is built using the Backbone JS framework. To work, it uses the PUT and DELETE request method for HTTP requests.
+    If you encounter problem with adding/removing your quiz questions/answers/results, you have probably blocked the DELETE and/or PUT methods on your server.
+</p>
+
+<h3>Solution</h3>
+
+<p>
+    The easiest way to allow Backbone working properly, is to insert the below condition into the .htaccess file on your server.
+    If this not an option on your server, please contact with your server provider to check other possible solutions.
+</p>
+<textarea cols="35" rows="4" onclick="select()">
+    <Limit GET POST PUT DELETE>
+        order deny,allow
+        allow from all
+    </Limit>
+</textarea>
+
+    <hr/>
+
+    
+
+    <br/>
+    <br/>
+    <br/>
+
+</div><!-- /main -->
+
+<div class="col-md-3" role="complementary">
+    <br/>
+    <br/>
+    <br/>
+
+    <nav id="navbar" class="g1-sidebar hidden-print hidden-xs hidden-sm">
+        <ul class="nav">
+
+            <!--------------------->
+            <!-- Getting Started -->
+            <!--------------------->
+
+            <li class="">
+                <a href="#g1docs-getting-started">Getting Started</a>
+                <ul class="nav">
+                    
+
+                        
+
+                    
+
+                        <li class=""><a href="#g1docs-quick-start-guide">Quick-start guide</a></li>
+
+                    
+
+                        <li class=""><a href="#g1docs-installation">Installation</a></li>
+
+                    
+
+                        <li class=""><a href="#g1docs-workflow">Basic workflow</a></li>
+
+                    
+                </ul>
+            </li>
+
+            <!------------->
+            <!-- Profile -->
+            <!------------->
+
+            <li class="">
+                <a href="#g1docs-profile">Profile</a>
+                <ul class="nav">
+                    
+
+                    <li class=""><a href="#g1docs-use-buddypress">Use BuddyPress</a></li>
+
+                    
+
+                    <li class=""><a href="#g1docs-setup-buddypress">Setup BuddyPress</a></li>
+
+                    
+                </ul>
+            </li>
+
+            <!------------------>
+            <!-- Social Login -->
+            <!------------------>
+
+            <li class="">
+                <a href="#g1docs-social-login">Social Login</a>
+                <ul class="nav">
+                    
+
+                    <li class=""><a href="#g1docs-use-wp-social-login">Use WP Social Login</a></li>
+
+                    
+
+                    <li class=""><a href="#g1docs-setup-wp-social-login">Setup WP Social Login</a></li>
+
+                    
+                </ul>
+            </li>
+
+            <!------------->
+            <!-- Quizzes -->
+            <!------------->
+
+            <li class="">
+                <a href="#g1docs-quizzes">Quizzes</a>
+                <ul class="nav">
+                    
+
+                    <li class=""><a href="#g1docs-set-up-quizzes">Set up quizzes</a></li>
+
+                    
+
+                    <li class=""><a href="#g1docs-frontend-quiz">Create a quiz on frontend</a></li>
+
+                    
+
+                    <li class=""><a href="#g1docs-backend-quiz">Create a quiz on backend</a></li>
+
+                    
+
+                    <li class=""><a href="#g1docs-share-to-unlock">Share to unlock</a></li>
+
+                    
+                </ul>
+            </li>
+
+            <!------------------->
+            <!-- Configuration -->
+            <!------------------->
+
+            <li class="">
+                <a href="#g1docs-configuration">Configuration</a>
+                <ul class="nav">
+                    
+
+                    <li class=""><a href="#g1docs-general-info">General</a></li>
+
+                    
+
+                    <li class=""><a href="#g1docs-post-formats">Post formats</a></li>
+
+                    
+
+                    <li class=""><a href="#g1docs-item-forms">Item forms</a></li>
+
+                    
+
+                    <li class=""><a href="#g1docs-pages">Pages</a></li>
+
+                    
+
+                    <li class=""><a href="#g1docs-post-titles">Post titles</a></li>
+
+                    
+
+                    <li class=""><a href="#g1docs-voting">Voting</a></li>
+
+                    
+
+                    <li class=""><a href="#g1docs-demo-mode">Demo mode</a></li>
+
+                    
+                </ul>
+            </li>
+
+            <!------------------->
+            <!-- Administation -->
+            <!------------------->
+
+            <li class="">
+                <a href="#g1docs-administration">Administation</a>
+                <ul class="nav">
+                    
+
+                    <li class=""><a href="#g1docs-review-submissions">Review new items</a></li>
+
+                    
+
+                    <li class=""><a href="#g1docs-users-permissions">Users permissions</a></li>
+
+                    
+                </ul>
+            </li>
+
+            <!---------->
+            <!-- Misc -->
+            <!---------->
+
+            <li class="">
+                <a href="#g1docs-misc">Miscellaneous</a>
+                <ul class="nav">
+                    
+
+                    <li class=""><a href="#g1docs-sources-credits">Sources and Credits</a></li>
+
+                    
+
+                    <li class=""><a href="#g1docs-javascript-files">JavaScript files</a></li>
+
+                    
+
+                    <li class=""><a href="#g1docs-css-files">CSS files</a></li>
+
+                    
+
+                    <li class=""><a href="#g1docs-folder-structure">Folder Structure</a></li>
+
+                    
+
+                    <li class=""><a href="#g1docs-custom-widgets">Custom Widgets</a></li>
+
+                    
+                </ul>
+            </li>
+
+            <!--------->
+            <!-- FAQ -->
+            <!--------->
+
+            <li class="">
+                <a href="#g1docs-faq">FAQ</a>
+                <ul class="nav">
+                    
+
+                    <li class=""><a href="#g1docs-faq-update-plugin">How to update plugin?</a></li>
+
+                    
+
+                    <li class=""><a href="#g1docs-faq-post-vs-submission">What's the difference between Post and Submission?</a></li>
+
+                    
+
+                    <li class=""><a href="#g1docs-do-i-need-buddypress">Do I need the BuddyPress plugin?</a></li>
+
+                    
+
+                    <li class=""><a href="#g1docs-do-i-need-wp-social-login">Do I need the WP Social Login plugin?</a></li>
+
+                    
+
+                    <li class=""><a href="#g1docs-faq-change-default-user-role">How to change default user role (for all new users)?</a></li>
+
+                    
+
+                    <li class=""><a href="#g1docs-faq-assign-new-role-to-existing-user">How to assign new role to existing user?</a></li>
+
+                    
+
+                    <li class=""><a href="#g1docs-faq-do-i-need-all-buddypress-components">Do I need to use all other BuddyPress components?</a></li>
+
+                    
+                </ul>
+            </li>
+
+            <!---------------------->
+            <!-- Troubleshooting --->
+            <!---------------------->
+
+            <li class="">
+                <a href="#g1docs-troubleshooting">Troubleshooting</a>
+                <ul class="nav">
+                    
+
+                    <li class=""><a href="#g1docs-troubleshooting-quiz-actions-dont-work">Quiz actions don't work</a></li>
+
+                    
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
+</div><!-- /complementary -->
+
+
+            </div>
+
+        </div>
+
+        <!-- Bootstrap core JavaScript -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.waypoints.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+
+<script type="text/javascript">
+  (function ($) {
+    $(window).load(function () {
+      var $navbar = $('#navbar');
+
+      var waypoint = new Waypoint({
+        element: $navbar,
+        handler: function (direction) {
+          $navbar.toggleClass('g1-sticky');
+        }
+      });
+
+    });
+  })(jQuery);
+</script>
+
+
+    </body>
+
+</html>
+

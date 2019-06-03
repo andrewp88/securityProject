@@ -1,0 +1,303 @@
+VERSION 1.8 - major update - 1 May 2017
+
+# NEW - Ajax login, no more redirects to backend
+# NEW - Allow users upload image from URL
+
+# Improved - Display status message after saving draft
+
+# Fixed - Missing translations
+# Fixed - Tags auto-complete results visible in the footer
+# Fixed - PHP warnings
+
+==============================================================================
+
+
+VERSION 1.7 - major update - 7 April 2017
+
+# NEW - Edit mode
+# NEW - Draft mode
+# NEW - Preview mode
+# NEW - Multisite compatibility
+
+# Improved - Excerpt support for quizzes
+
+==============================================================================
+
+
+VERSION 1.6.1 - minor update - 30 March 2017
+
+# Fixed - Quiz: answers template setting resets to default
+# Fixed - Quiz: correct answer selection
+
+==============================================================================
+
+
+VERSION 1.6 - major update - 23 March 2017
+
+# NEW - Facebook Instant Articles support
+
+# Fixed - Notifications about post/item status change owned by wrong user
+# Fixed - Bad request (404 Not Found) while uploading image
+
+==============================================================================
+
+
+VERSION 1.5 - major update - 16 March 2017
+
+# NEW - Trivia quiz
+# NEW - Personality quiz
+# NEW - Frontend quizzes (frontend uploader formats)
+# NEW - Backend quizzes (for admins)
+# NEW - Auto featured images for embeds
+# NEW - Fake votes
+# NEW - WPML compatibility
+# NEW - Email notifications when new post/item is submitted for review
+# NEW - Skip verification step option
+
+# Fixed - Items upload limits
+# Fixed - %%items%% placeholder is not replaced for a single item title
+# Fixed - Vote counter set to -1 on BuddyPress posts
+# Fixed - Snax specific url parts are not applied for BuddyPress urls
+# Fixed - Block dashborad access for non-administrators
+# Fixed - Classic and ranked list don't work if the Open List format is not active
+# Fixed - Permalink slug edit doesn't get saved after clicking the publish button
+# Fixed - PHP warnings for some specific server configurations
+# Fixed - Spotify embed
+# Fixed - Story featured image is not cleared after post submission
+# Fixed - Top and Bottom Text can't be changed via child theme
+
+==============================================================================
+
+
+VERSION 1.4.1 - minor update - 15 December 2016
+
+# Improved - Disable voting per post type
+# Improved - If item's title is not set, use its parent title
+# Improved - Disable voting box when list was closed for voting
+
+# Fixed - New formats missing
+# Fixed - Images not uploading if WP Dashboard access is blocked
+# Fixed - If even one of uploaded images is broken, entire list is empty
+# Fixed - Story format limit
+
+==============================================================================
+
+
+VERSION 1.4 - major update - 9 December 2016
+
+# NEW - Ranked List format
+# NEW - Classic List format
+# NEW - Featured Image for the Story format
+# NEW - Tags auto-complete
+# NEW - Filter posts by format in BuddyPress's profile
+# NEW - Option to close submission
+# NEW - Option to close voting
+# NEW - Option to block dashborad access for non-administrators
+# NEW - Support for SoundCloud
+# NEW - WordPress 4.7 compatibility
+
+# Improved - Froala editor: load rich editor for all text fields
+
+# Fixed - Froala editor: requires FontAwesome but doesn't load it when needed
+# Fixed - Froala editor: can't do anything in the editor after video added to empty editor
+# Fixed - Gallery format: number of submissions shouldn't be added automatically to post title
+
+Changed template files:
+ snax/templates/content-item.php
+ snax/templates/content-single-item.php
+ snax/templates/demo/form-meme.php
+ snax/templates/featured-image.php
+ snax/templates/form-frontend-submission-list.php
+ snax/templates/form-frontend-submission-text.php
+ snax/templates/frontend-submission.php
+ snax/templates/items/title.php
+ snax/templates/posts/form-edit/row-description.php
+ snax/templates/posts/form-edit/row-featured-image.php
+ snax/templates/posts/form-edit/row-list-options.php
+ snax/templates/posts/form-edit/row-tags.php
+
+==============================================================================
+
+
+VERSION 1.3.1 - minor update - 25 November 2016
+
+# NEW - Option to turn backend created posts into the "Open List" posts
+# NEW - Select multiple categories
+# NEW - Assign Snax posts to a category automatically while submitting
+
+# Improved - Block the "Submit" button after submission to prevent duplication
+# Improved - Story format: editor height increased
+
+# Fixed - Story format: doesn't work when it's the only active format chosen
+# Fixed - Story format: missing toolbar's buttons on mobile devices
+# Fixed - Story format: "jumping" title in FF
+
+Changed template files:
+ snax/templates/form-frontend-submission-text.php
+ snax/templates/posts/form-edit/row-categories.php
+
+==============================================================================
+
+
+VERSION 1.3 - major update - 3 November 2016
+
+# NEW - Story format
+
+# Improved - Snax specific url parts can be changed (in Settings > Permalinks)
+# Improved - Meme format
+# Improved - Drag formats to reorder (in Snax settings panel)
+# Improved - Allow voting for a snax item on its single page
+# Improved - New filters added to control BuddyPress activities
+
+# Fixed - Admin files loading order
+# Fixed - Gallery format missing pagination
+# Fixed - Missing translations (image, embed)
+
+Changed template files:
+ snax/templates/form-frontend-submission-text.php
+ snax/templates/frontend-submission.php
+ snax/templates/posts/form-edit/row-content-title.php
+ snax/templates/posts/form-edit/row-content.php
+
+==============================================================================
+
+
+VERSION 1.2 - major update -  1 October 2016
+
+# NEW - Meme format
+# NEW - Guest voting
+
+Changed files:
+ snax/assets/css/snax-rtl.css
+ snax/assets/css/snax.css
+ snax/assets/js/front-submission.js
+ snax/assets/js/front.js
+ snax/includes/common/functions.php
+ snax/includes/core/hooks.php
+ snax/includes/frontend-submission/formats.php
+ snax/includes/frontend-submission/functions.php
+ snax/includes/posts/functions.php
+ snax/includes/users/capabilities.php
+ snax/includes/votes/ajax.php
+ snax/includes/votes/functions.php
+ snax/includes/votes/template.php
+ snax/languages/snax.pot
+ snax/snax.php
+ snax/templates/form-frontend-submission-meme.php
+ snax/templates/form-frontend-submission-text.php
+ snax/templates/posts/form-edit/row-tags.php
+
+==============================================================================
+
+
+VERSION 1.1.6 - minor update -  9 September 2016
+
+# Improved - Hoverable | touchable snax item shares
+# Improved - The Pages tabs is now before the Lists in the plugin settings
+
+# Fixed - Warning when none of the Snax Active Formats is checked
+# Fixed - GIFs are not 100% wide on a single snax item page
+
+==============================================================================
+
+
+VERSION 1.1.5 - minor update - 19 August 2016
+
+# NEW - WP 4.6 compatibility
+
+# Fixed - Multiple images can't be inserted into Story format
+# Fixed - Story format characters limit filter doesn't work
+# Fixed - jQuery live function is no longer available
+# Fixed - List items limit set to "unlimited" doesn't work
+
+==============================================================================
+
+
+VERSION 1.1.4 - minor update - 3 August 2016
+
+# NEW - Facebook embeds support
+# NEW - Voting management settings
+
+# Improved - List author can submit new items to closed list
+
+# Fixed - Wrong translation domain for some phrases
+# Fixed - Open list status added to the Gallery post format title
+# Fixed - User can always drop more than one file, even for single image
+# Fixed - Missing second argument in the_title hook
+# Fixed - Gallery item can't be deleted or set as featured
+# Fixed - Item slug is numeric when added as a part of list/gallery.
+
+==============================================================================
+
+
+VERSION 1.1.3 - minor update - 22 July 2016
+
+# NEW - Choose which item should be list/gallery featured image
+# NEW - Force category selection during submission (optional)
+
+# Improved - BuddyPress notifications
+# Improved - BuddyPress activities
+# Improved - Tags field can be configured (e.g. to change tags delimiter)
+# Improved - snaxicon style.css is not loaded anymore, just the font
+# Improved - more meaningful form labels in the plugin settings
+
+# Fixed - Title and description are reset when new item is added
+# Fixed - W3 Total Cache minify option enabled breaks the Story format
+# Fixed - Success submission message should be visible only for authors
+
+==============================================================================
+
+
+VERSION 1.1.2 - minor update - 29 June 2016
+
+# Improved - Use already created post formats as demo examples
+# Improved - BuddyPress better vote notifications for authors
+
+# Fixed - BuddyPress votes activities
+# Fixed - BuddyPress votes notifications
+# Fixed - W3 Total Cache minify for logged in users
+
+==============================================================================
+
+
+VERSION 1.1.1 - minor update - 22 June 2016
+
+# Improved - First image from story format is used as post featured image
+# Improved - UI elements for story format
+# Improved - Image format now stores image and source in content
+# Improved - Upload form phrases (e.g. Drop files here) now can be translated from plugin scope
+# Improved - Admin can submit new items to closed list
+# Improved - Admin can submit unlimited number of items to post
+
+# Fixed - Items placeholder in title doesn't work for gallery format
+# Fixed - Image source is not visible
+# Fixed - Story format has no featured image
+# Fixed - Gallery items can be voted
+
+==============================================================================
+
+
+VERSION 1.1 - major update - 18 June 2016
+
+# NEW - Text story format
+
+# Fixed - Votes don't work without user IP/hostname
+# Fixed - Page title doesn't replace %%items%% placeholder when SEO by Yoast is used
+# Fixed - Categories without posts are not visible on the category list during post creation
+# Fixed - Wrong items counter while adding new items to existing list
+
+==============================================================================
+
+
+
+VERSION 1.0.1 - minor update - 9 June 2016
+
+# Improved - New option to enable/disable user IP verification
+# Improved - New option to allow users post 10 posts per day
+
+# Fixed - Custom datetime breaks post
+# Fixed - Note about reached items limit visible even if unlimited option selected
+
+==============================================================================
+
+VERSION 1.0.0 - Initial release

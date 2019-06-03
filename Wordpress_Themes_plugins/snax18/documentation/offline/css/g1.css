@@ -1,0 +1,42 @@
+header.navbar {
+  margin-bottom: 0;
+}
+
+
+
+nav.g1-sticky {
+  position: fixed;
+  top: 10px;
+}
+
+.g1-sidebar > ul.nav {
+  
+}
+
+.g1-sidebar > ul.nav ul {
+  display: none;
+  margin-left: 15px;
+}
+
+.g1-sidebar > ul > li > a {
+  padding-top: 4px;
+  padding-bottom: 4px;  
+} 
+
+.g1-sidebar > ul.nav li.active > a {
+  border-width: 0 0 0 4px;
+  border-style: solid;
+}
+
+.g1-sidebar > ul.nav li.active ul {
+  display: block;
+}
+
+.g1-sidebar ul ul > li > a {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+h2 {
+  margin-top: 40px;
+}

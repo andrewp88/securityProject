@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Snax WordPress Plugin - Documentation</title>
+    <description>Open Lists of WordPress</description>
+    <link>.//</link>
+    <atom:link href=".//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 27 Apr 2017 14:31:31 +0200</pubDate>
+    <lastBuildDate>Thu, 27 Apr 2017 14:31:31 +0200</lastBuildDate>
+    <generator>Jekyll v3.4.1</generator>
+    
+      <item>
+        <title>Share to unlock</title>
+        <description>&lt;h2 id=&quot;g1docs-share-to-unlock&quot;&gt;Share quiz to Facebook to unlock results&lt;/h2&gt;
+
+&lt;p&gt;
+    You can spread your quizzes more quickly across the web if your users will share them on the Facebook.
+    Snax gives you an option to force users to do that, if they want to see their results.
+&lt;/p&gt;
+
+&lt;p&gt;
+    To force users to share quiz to Facebook before seeing the results, please do as follows:
+&lt;/p&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Go to the &lt;strong&gt;WP Admin panel &amp;rsaquo; Quizzes&lt;/strong&gt; and choose a quiz for which you want to enable that option&lt;/li&gt;
+    &lt;li&gt;On a quiz edition panel, choose the &lt;strong&gt;Settings&lt;/strong&gt; tab&lt;/li&gt;
+    &lt;li&gt;Set the option &lt;strong&gt;User have to share the quiz to see results?&lt;/strong&gt; to &quot;yes&quot;&lt;/li&gt;
+    &lt;li&gt;Now, you need to set the Facebook App Id to allow sharing&lt;/li&gt;
+    &lt;li&gt;Go to the &lt;strong&gt;WP admin panel &amp;rsaquo; Settings &amp;rsaquo; Snax&lt;/strong&gt;&lt;/li&gt;
+    &lt;li&gt;Choose the &lt;strong&gt;General&lt;/strong&gt; tab&lt;/li&gt;
+    &lt;li&gt;Set the &lt;strong&gt;Facebook App Id&lt;/strong&gt; option (use the &lt;a href=&quot;https://developers.facebook.com/docs/apps/register&quot; target=&quot;_blank&quot;&gt;Register and Configure an App&lt;/a&gt; guide for help)&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Fri, 10 Feb 2017 00:00:00 +0100</pubDate>
+        <link>.//quizzes/2017/02/10/facebook-app-id.html</link>
+        <guid isPermaLink="true">.//quizzes/2017/02/10/facebook-app-id.html</guid>
+        
+        
+        <category>quizzes</category>
+        
+      </item>
+    
+      <item>
+        <title>Create a quiz on backend</title>
+        <description>&lt;h2 id=&quot;g1docs-backend-quiz&quot;&gt;Create a quiz on backend&lt;/h2&gt;
+
+&lt;p&gt;
+    Backend quiz can be created by site's administrator (or other roles with edit posts capability). To create a new quiz please go to the
+    &lt;strong&gt;WP Admin panel &amp;rsaquo; Quizzes &amp;rsaquo; Add new&lt;/strong&gt; and choose one of available types.
+&lt;/p&gt;
+
+&lt;br /&gt;
+&lt;p&gt;&lt;img class=&quot;img-responsive&quot; src=&quot;img/quiz_backend_selection.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;br /&gt;
+</description>
+        <pubDate>Wed, 08 Feb 2017 00:00:00 +0100</pubDate>
+        <link>.//quizzes/2017/02/08/backend-quiz.html</link>
+        <guid isPermaLink="true">.//quizzes/2017/02/08/backend-quiz.html</guid>
+        
+        
+        <category>quizzes</category>
+        
+      </item>
+    
+      <item>
+        <title>Create a quiz on frontend</title>
+        <description>&lt;h2 id=&quot;g1docs-frontend-quiz&quot;&gt;Create a quiz on frontend&lt;/h2&gt;
+
+
+&lt;p&gt;
+    Frontend quiz can be created by a user with &quot;Snax Author&quot; role assigned. To create a new quiz please go to the
+    &lt;strong&gt;Frontend Submission&lt;/strong&gt; page and choose one of available quiz types.
+&lt;/p&gt;
+
+&lt;br /&gt;
+&lt;p&gt;&lt;img class=&quot;img-responsive&quot; src=&quot;img/quiz_frontend_selection.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;br /&gt;
+
+</description>
+        <pubDate>Sun, 05 Feb 2017 00:00:00 +0100</pubDate>
+        <link>.//quizzes/2017/02/05/frontend-quiz.html</link>
+        <guid isPermaLink="true">.//quizzes/2017/02/05/frontend-quiz.html</guid>
+        
+        
+        <category>quizzes</category>
+        
+      </item>
+    
+      <item>
+        <title>Set up quizzes</title>
+        <description>&lt;h2 id=&quot;g1docs-set-up-quizzes&quot;&gt;Set up quizzes&lt;/h2&gt;
+
+&lt;p&gt;
+    There are two types of quizzes:
+&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;frontend&lt;/strong&gt; - behave like other Snax formats&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;backend&lt;/strong&gt; - behave like any custom post type&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;How to enable frontend quizzes?&lt;/h3&gt;
+
+&lt;p&gt;
+    As with other Snax formats, you need to activate quizzes (both Trivia and Personality) in &lt;strong&gt;WP admin panel &amp;rsaquo; Settings &amp;rsaquo; Snax &amp;rsaquo; General &amp;rsaquo; Active formats&lt;/strong&gt; before your users will be able to use them.
+&lt;/p&gt;
+
+&lt;h3&gt;How to enable backend quizzes?&lt;/h3&gt;
+
+&lt;p&gt;
+    You don't need to activate backend quizzes. When Snax is activated the quizzes are accessible via &lt;strong&gt;WP admin panel &amp;rsaquo; Quizzes&lt;/strong&gt;.
+&lt;/p&gt;
+</description>
+        <pubDate>Wed, 01 Feb 2017 00:00:00 +0100</pubDate>
+        <link>.//quizzes/2017/02/01/setup.html</link>
+        <guid isPermaLink="true">.//quizzes/2017/02/01/setup.html</guid>
+        
+        
+        <category>quizzes</category>
+        
+      </item>
+    
+      <item>
+        <title>Demo mode</title>
+        <description>&lt;h2 id=&quot;g1docs-demo-mode&quot;&gt;Demo Mode&lt;/h2&gt;
+
+&lt;p&gt;
+    The demo mode is the fastest way to start playing with frontend submission. Thanks to it,
+    you don't need to upload new images/embeds all the time you want to test submission process.
+&lt;/p&gt;
+
+&lt;h3&gt;Setup&lt;/h3&gt;
+
+&lt;p&gt;
+    To enable demo mode, please do as follows:
+&lt;/p&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Go to the &lt;strong&gt;WP admin panel &amp;rsaquo; Snax&lt;/strong&gt;.&lt;/li&gt;
+    &lt;li&gt;Switch to the &lt;strong&gt;Demo&lt;/strong&gt; section.&lt;/li&gt;
+    &lt;li&gt;Check the &lt;strong&gt;Demo mode enabled?&lt;/strong&gt; box.&lt;/li&gt;
+    &lt;li&gt;From the Media Library choose (or upload new ones) images that will be used as your demo images.&lt;/li&gt;
+    &lt;li&gt;Fill in embed URL and choose post image if you want to test embeds.&lt;/li&gt;
+    &lt;li&gt;Now, when you create a new post, demo data will show up under the upload image/embeb form.&lt;/li&gt;
+    &lt;li&gt;Save changes.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+</description>
+        <pubDate>Sat, 30 Apr 2016 00:00:00 +0200</pubDate>
+        <link>.//configuration/2016/04/30/demo-mode.html</link>
+        <guid isPermaLink="true">.//configuration/2016/04/30/demo-mode.html</guid>
+        
+        
+        <category>configuration</category>
+        
+      </item>
+    
+      <item>
+        <title>Voting</title>
+        <description>&lt;h2 id=&quot;g1docs-voting&quot;&gt;Voting&lt;/h2&gt;
+
+&lt;p&gt;
+    Voting system allows users to upvote/downvote every post that was created using Snax uploader (List, Gallery, Story etc).
+&lt;/p&gt;
+
+&lt;h3&gt;Disable voting&lt;/h3&gt;
+
+&lt;p&gt;
+    To disable voting globally, please do as follows:
+&lt;/p&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Go to the &lt;strong&gt;WP admin panel &amp;rsaquo; Snax&lt;/strong&gt;.&lt;/li&gt;
+    &lt;li&gt;Switch to the &lt;strong&gt;Voting&lt;/strong&gt; section.&lt;/li&gt;
+    &lt;li&gt;Uncheck the &lt;strong&gt;Voting enabled?&lt;/strong&gt; option.&lt;/li&gt;
+    &lt;li&gt;Save changes.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3&gt;Allow users to vote on other post types&lt;/h3&gt;
+
+&lt;p&gt;
+    To allow users to vote on a post that is not any of Snax formats, please do as follows:
+&lt;/p&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Go to the &lt;strong&gt;WP admin panel &amp;rsaquo; Snax&lt;/strong&gt;.&lt;/li&gt;
+    &lt;li&gt;Switch to the &lt;strong&gt;Voting&lt;/strong&gt; section.&lt;/li&gt;
+    &lt;li&gt;Make sure that the &lt;strong&gt;Voting enabled?&lt;/strong&gt; option is checked.&lt;/li&gt;
+    &lt;li&gt;Check all post types that can be voted&lt;/li&gt;
+    &lt;li&gt;Save changes.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3&gt;Fake votes&lt;/h3&gt;
+
+&lt;p&gt;
+    New posts start with votes counter set to 0. It doesn't look good and it doesn't attract your visitors.
+    The &quot;Fake votes&quot; feature will help you solve that problem.
+&lt;/p&gt;
+
+&lt;h4&gt;Use auto-calculation&lt;/h4&gt;
+&lt;p&gt;
+    Automatic votes calculation gets into account post publish date. At first votes counter won't be equal to value you set as &lt;strong&gt;Fake vote count base&lt;/strong&gt; (see below) but will
+    be only 10% of it. The counter will reach the final value after 30 days which makes it look more natural during post lifetime. To enable auto-calculation, please do as follows:
+&lt;/p&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Go to the &lt;strong&gt;WP admin panel &amp;rsaquo; Snax&lt;/strong&gt;.&lt;/li&gt;
+    &lt;li&gt;Switch to the &lt;strong&gt;Voting&lt;/strong&gt; section.&lt;/li&gt;
+    &lt;li&gt;Make sure that the &lt;strong&gt;Voting enabled?&lt;/strong&gt; option is checked.&lt;/li&gt;
+    &lt;li&gt;Set the &lt;strong&gt;Fake vote count base&lt;/strong&gt; value. Be aware that &lt;/li&gt;
+    &lt;li&gt;Save changes.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4&gt;Set exact votes value per post&lt;/h4&gt;
+
+&lt;p&gt;
+    If you prefer to set votes counter to an exact value, regardless of the &quot;Fake vote count base&quot; value, please do as follows:
+&lt;/p&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Go to the &lt;strong&gt;WP admin panel &amp;rsaquo; Posts&lt;/strong&gt;.&lt;/li&gt;
+    &lt;li&gt;Open your target post to edit.&lt;/li&gt;
+    &lt;li&gt;Scroll down to the &lt;strong&gt;Fake votes&lt;/strong&gt; metabox.&lt;/li&gt;
+    &lt;li&gt;Set the &lt;strong&gt;Fake vote count&lt;/strong&gt; value.&lt;/li&gt;
+    &lt;li&gt;Update post.&lt;/li&gt;
+&lt;/ol&gt;</description>
+        <pubDate>Mon, 25 Apr 2016 00:00:00 +0200</pubDate>
+        <link>.//configuration/2016/04/25/voting.html</link>
+        <guid isPermaLink="true">.//configuration/2016/04/25/voting.html</guid>
+        
+        
+        <category>configuration</category>
+        
+      </item>
+    
+      <item>
+        <title>Post titles</title>
+        <description>&lt;h2 id=&quot;g1docs-post-titles&quot;&gt;Post Titles&lt;/h2&gt;
+
+&lt;p&gt;
+    Snax adds post format related information to Wordpress post titles.
+&lt;/p&gt;
+
+&lt;p&gt;For the &lt;strong&gt;Open List&lt;/strong&gt; post format it will be (example below):&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;already submitted items count&lt;/li&gt;
+    &lt;li&gt;list status (open | closed for submission)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;font-size: 20px; padding: 20px 0; color: #777777;&quot;&gt;Can You Get Through These &lt;strong&gt;20+&lt;/strong&gt; Sexy Photos Without Saying WOW &lt;strong&gt;(Open for submission)&lt;/strong&gt;?&lt;/p&gt;
+
+&lt;p&gt;For the &lt;strong&gt;Gallery&lt;/strong&gt; post format it will be (example below):&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;number of gallery items&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;font-size: 20px; padding: 20px 0; color: #777777;&quot;&gt;Why my last holidays turned into a trip of my life &lt;strong&gt;(10 photos)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3&gt;Setup&lt;/h3&gt;
+
+&lt;p&gt;
+    To enable/disable post titles parts, please follow these steps:
+&lt;/p&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Go to the &lt;strong&gt;WP admin panel &amp;rsaquo; Snax&lt;/strong&gt;.&lt;/li&gt;
+    &lt;li&gt;Choose the &lt;strong&gt;General&lt;/strong&gt; section.&lt;/li&gt;
+    &lt;li&gt;Check/uncheck the &lt;strong&gt;Show items count in title&lt;/strong&gt; to show/hide items count.&lt;/li&gt;
+    &lt;li&gt;Choose the &lt;strong&gt;Lists&lt;/strong&gt; section.&lt;/li&gt;
+    &lt;li&gt;Check/uncheck the &lt;strong&gt;Show list status in title&lt;/strong&gt; to show/hide list status.&lt;/li&gt;
+    &lt;li&gt;Save changes.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+    To change items count position from the beginning of a post, please do as follows:
+&lt;/p&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Go to the &lt;strong&gt;WP admin panel &amp;rsaquo; Posts&lt;/strong&gt;.&lt;/li&gt;
+    &lt;li&gt;Choose one of your list (or gallery) posts.&lt;/li&gt;
+    &lt;li&gt;To a post title, add the &lt;code&gt;%%items%%&lt;/code&gt; placeholder in the place you want to show counter.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;br /&gt;
+&lt;p&gt;&lt;img class=&quot;img-responsive&quot; src=&quot;img/posts_title_placeholder.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;br /&gt;
+
+&lt;ol start=&quot;4&quot;&gt;
+    &lt;li&gt;Update post.&lt;/li&gt;
+    &lt;li&gt;Snax will replace that placeholder with a real value.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+</description>
+        <pubDate>Sun, 24 Apr 2016 00:00:00 +0200</pubDate>
+        <link>.//configuration/2016/04/24/post-titles.html</link>
+        <guid isPermaLink="true">.//configuration/2016/04/24/post-titles.html</guid>
+        
+        
+        <category>configuration</category>
+        
+      </item>
+    
+      <item>
+        <title>Basic workflow</title>
+        <description>&lt;h2 id=&quot;g1docs-workflow&quot;&gt;Basic workflow&lt;/h2&gt;
+
+&lt;h3 id=&quot;g1docs-post-vs-submission&quot;&gt;Post vs. Submission&lt;/h3&gt;
+
+&lt;p&gt;
+    Snax workflow is based on two main concepts, Posts and Submissions.
+    Before further reading, you should first get to know what they are and what's the main difference between them.
+&lt;/p&gt;
+&lt;p&gt;
+    &lt;strong&gt;Posts&lt;/strong&gt; - you can think of them as standard Wordpres posts. Besides plugin related options, they work in pretty much the same way.&lt;br /&gt;
+    Example: User creates new &quot;Open List&quot;. Other users may contribute to it.
+&lt;/p&gt;
+&lt;p&gt;
+    &lt;strong&gt;Submissions&lt;/strong&gt; - children of a post. They are similar, in behaviour, to posts but cannot exist alone.&lt;br /&gt;
+    Example: User adds new &quot;Submission&quot; to an existing open list.
+&lt;/p&gt;
+
+
+&lt;h3&gt;Add new post&lt;/h3&gt;
+
+&lt;p&gt;Here's how the standard submission process, from post creation to final approval, works:&lt;/p&gt;
+&lt;ol&gt;
+    &lt;li&gt;User clicks the &quot;+ Create&quot; button.&lt;/li&gt;
+    &lt;li&gt;Choose one of available formats (e.g. Create open list).&lt;/li&gt;
+    &lt;li&gt;Upload images or add embeds.&lt;/li&gt;
+    &lt;li&gt;Fill required fields and submit a post for a review.&lt;/li&gt;
+    &lt;li&gt;Now, the submitted post is waiting for your approval in the &lt;a href=&quot;#g1docs-review-submissions&quot;&gt;review queue&lt;/a&gt;.&lt;/li&gt;
+    &lt;li&gt;At this stage, only you (as administrator) and post author (as owner) have access to it.&lt;/li&gt;
+    &lt;li&gt;Until you publish this post, it won't be publicly accessible for all other visitors.&lt;/li&gt;
+    &lt;li&gt;To allow direct publishing, please read the &lt;a href=&quot;#g1docs-users-permissions&quot;&gt;Users permissions&lt;/a&gt; section.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3&gt;Add new submission&lt;/h3&gt;
+
+&lt;p&gt;Here are steps involved in new contribution process:&lt;/p&gt;
+&lt;ol&gt;
+    &lt;li&gt;User visits one of the existing open lists.&lt;/li&gt;
+    &lt;li&gt;After all items, there's a new item form.&lt;/li&gt;
+    &lt;li&gt;User uploads an image or adds an embed.&lt;/li&gt;
+    &lt;li&gt;Fill required fields and submit an item for a review.&lt;/li&gt;
+    &lt;li&gt;Now, the submitted item is waiting for your approval in the &lt;a href=&quot;#g1docs-review-submissions&quot;&gt;review queue&lt;/a&gt;.&lt;/li&gt;
+    &lt;li&gt;At this stage, only you (as administrator) and item author (as owner) have access to this item.&lt;/li&gt;
+    &lt;li&gt;Until you publish this item, it won't be publicly accessible for all other visitors.&lt;/li&gt;
+    &lt;li&gt;To allow direct publishing, please read the &lt;a href=&quot;#g1docs-users-permissions&quot;&gt;Users permissions&lt;/a&gt; section.&lt;/li&gt;
+&lt;/ol&gt;</description>
+        <pubDate>Sat, 23 Apr 2016 00:00:00 +0200</pubDate>
+        <link>.//getting_started/2016/04/23/basic-workflow.html</link>
+        <guid isPermaLink="true">.//getting_started/2016/04/23/basic-workflow.html</guid>
+        
+        
+        <category>getting_started</category>
+        
+      </item>
+    
+      <item>
+        <title>Pages</title>
+        <description>&lt;h2 id=&quot;g1docs-pages&quot;&gt;Pages&lt;/h2&gt;
+
+&lt;p&gt;
+    Snax requires only one custom page to work. It's the &lt;strong&gt;Frontend Submission&lt;/strong&gt; page. It's a start point to create any new post (Open List, Embed etc.).
+&lt;/p&gt;
+
+&lt;p&gt;
+    Other pages are optional. These are:
+&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Terms and Conditions&lt;/strong&gt; - frontend submission rules and privacy policy.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Report&lt;/strong&gt; - page on which you can put some contact form to get feedback from users about all kind of abuses.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Setup&lt;/h3&gt;
+
+&lt;p&gt;
+    The &lt;strong&gt;Frontend Submission&lt;/strong&gt; page is created and assigned during plugin installation. Only optional pages have to be created manually.
+    Please follow these simple steps to set them up:
+&lt;/p&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Go to the &lt;strong&gt;WP admin panel &amp;rsaquo; Pages &amp;rsaquo; Add New&lt;/strong&gt; and create a new page (e.g. Report).&lt;/li&gt;
+    &lt;li&gt;Fill its content (add a contact form, describe rules to follow etc).&lt;/li&gt;
+    &lt;li&gt;Publish page.&lt;/li&gt;
+    &lt;li&gt;Now, go to the &lt;strong&gt;WP admin panel &amp;rsaquo; Snax&lt;/strong&gt;.&lt;/li&gt;
+    &lt;li&gt;Switch to the &lt;strong&gt;Pages&lt;/strong&gt; section.&lt;/li&gt;
+    &lt;li&gt;Assign your newly created page to the relevant field.&lt;/li&gt;
+    &lt;li&gt;Save changes.&lt;/li&gt;
+&lt;/ol&gt;</description>
+        <pubDate>Sat, 23 Apr 2016 00:00:00 +0200</pubDate>
+        <link>.//configuration/2016/04/23/pages.html</link>
+        <guid isPermaLink="true">.//configuration/2016/04/23/pages.html</guid>
+        
+        
+        <category>configuration</category>
+        
+      </item>
+    
+      <item>
+        <title>Installation</title>
+        <description>&lt;h2 id=&quot;g1docs-installation&quot;&gt;Installation&lt;/h2&gt;
+
+&lt;p&gt;Please follow these simple steps to install the plugin and import the demo content in just few clicks.&lt;/p&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Go to the &lt;strong&gt;WP admin panel &amp;rsaquo; Plugins&lt;/strong&gt;&lt;/li&gt;
+    &lt;li&gt;Click the &lt;strong&gt;Add New&lt;/strong&gt; button&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;br /&gt;
+&lt;p&gt;&lt;img class=&quot;img-responsive&quot; src=&quot;img/installation_add_new.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;br /&gt;
+
+&lt;ol start=&quot;3&quot;&gt;
+	&lt;li&gt;Click the &lt;strong&gt;Upload Plugin&lt;/strong&gt; button&lt;/li&gt;
+    &lt;li&gt;Find the &lt;strong&gt;snax.zip&lt;/strong&gt; file inside the package you've downloaded from CodeCanyon&lt;/li&gt;
+    &lt;li&gt;Upload it&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;br /&gt;
+&lt;p&gt;&lt;img class=&quot;img-responsive&quot; src=&quot;img/installation_choose_file.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;br /&gt;
+
+&lt;ol start=&quot;6&quot;&gt;
+    &lt;li&gt;After few seconds the plugin will be installed.&lt;/li&gt;
+    &lt;li&gt;Click the &lt;strong&gt;Activate Plugin&lt;/strong&gt; button&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;br /&gt;
+&lt;p&gt;&lt;img class=&quot;img-responsive&quot; src=&quot;img/installation_activate.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;br /&gt;
+</description>
+        <pubDate>Fri, 22 Apr 2016 00:00:00 +0200</pubDate>
+        <link>.//getting_started/2016/04/22/installation.html</link>
+        <guid isPermaLink="true">.//getting_started/2016/04/22/installation.html</guid>
+        
+        
+        <category>getting_started</category>
+        
+      </item>
+    
+  </channel>
+</rss>
