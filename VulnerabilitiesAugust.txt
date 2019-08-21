@@ -1,1 +1,16 @@
-https://www.exploit-db.com/exploits/46619
+https://www.exploit-db.com/exploits/46619 - tested, working, need authentication 
+
+https://www.exploit-db.com/exploits/46377 sql injection, need authentication, tricky to be tested, need sniffing.
+
+https://www.exploit-db.com/exploits/46252 arbitrary file download via plugin, seems easy
+
+
+https://www.youtube.com/watch?v=7lN4yIQ8GxA authenticated sql injection, molto tricky
+
+
+https://www.exploit-db.com/exploits/43420 sql injection and xss ,TESTED XSS ,  
+
+https://www.exploit-db.com/exploits/43110 sql injection , sembra easy , not authenticated
+
+
+https://www.exploit-db.com/exploits/42263 sql injection , medium difficult
