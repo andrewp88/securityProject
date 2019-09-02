@@ -1,0 +1,9 @@
+- aggiungere titolo : Wordpress websites attacker
+
+- devo fare controlli? tipo:
+ 1. sull'url sbagliato e che sia di un sito wordpress
+
+
+- collegare plugin e vulnerabilità:
+    - dictionary tra plugin e attacco
+    - in base al plugin scelto mostrare gli attacchi possibili
