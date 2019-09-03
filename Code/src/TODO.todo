@@ -7,3 +7,8 @@
 - collegare plugin e vulnerabilità:
     - dictionary tra plugin e attacco
     - in base al plugin scelto mostrare gli attacchi possibili
+	
+	
+	payload
+	
+	<script>alert("ciao");</script>

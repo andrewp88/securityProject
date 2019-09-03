@@ -42,7 +42,8 @@ def wpContentControl(url):
     response=requests.get(url)
     #print(response.text);
     soup= BeautifulSoup(response.text,'html.parser')
-    scripts=soup.find_all('script', src=re.compile("^http://localhost/wp4.9/wordpress/wp-content/"))
+    wpContentString = "^"+url+"/wp-content/"
+    scripts=soup.find_all('script', src=re.compile(wpContentString))
     if scripts:
         return True
 

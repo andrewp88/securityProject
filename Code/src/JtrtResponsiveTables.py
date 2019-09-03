@@ -1,3 +1,3 @@
 
-def attack():
+def attack(url):
     print("jtrt attack")

@@ -6,24 +6,25 @@ import re
 activePlugins=[]
 vulnerablePlugins={"jtrt-responsive-tables":"SQL Injection, John","ad-manager-wd":"FileDownload","smartgooglecode":"SQL Injection"}
 
-def main(choice):
+
+def main(choice,pUrl):
     if(choice=='1'):
-        pluginListGeneration()
-        return vulnerablePlugins
+        return pluginListGeneration(pUrl)
     else:
         print("WpScan")
 
-def htmlPluginDiscovery():
-    response=requests.get("http://localhost/wp4.9/wordpress")
+def htmlPluginDiscovery(pUrl):
+    response=requests.get(pUrl)
     #print(response.text);
     soup= BeautifulSoup(response.text,'html.parser')
-    scripts=soup.find_all('script', src=re.compile("^http://localhost/wp4.9/wordpress/wp-content/plugins/"))
+    pluginString = "^"+pUrl + "/wp-content/plugins/"
+    scripts=soup.find_all('script', src=re.compile(pluginString))
     #print("scripts: ",scripts);
     activePlugins.append(scripts[0]['src'].split("/")[7])
 
 
-def urlPluginDiscovery(path):
-    url="http://localhost/wp4.9/wordpress/wp-content/plugins/"+path
+def urlPluginDiscovery(path,pUrl):
+    url=pUrl+"/wp-content/plugins/"+path
     response=requests.get(url)
     if(path=="smart-google-code-inserter/"):
         smartGoogleDiscover(response.text)
@@ -48,10 +49,10 @@ def smartGoogleDiscover(response):
         print("this plugin is not active")
 
 
-def pluginListGeneration():
-    htmlPluginDiscovery()
-    urlPluginDiscovery("smart-google-code-inserter/")
-    urlPluginDiscovery("jtrt-responsive-tables/public/css/")
+def pluginListGeneration(pUrl):
+    htmlPluginDiscovery(pUrl)
+    urlPluginDiscovery("smart-google-code-inserter/",pUrl)
+    urlPluginDiscovery("jtrt-responsive-tables/public/css/",pUrl)
 
     activePluginCopy=activePlugins.copy()
     vulnerablePluginCopy=vulnerablePlugins.copy()
@@ -76,4 +77,4 @@ def pluginListGeneration():
             string=str(counter)+ ": "+x +" --> Possible attacks: " + y
             print(string)
             counter+=1
-
+    return vulnerablePluginCopy

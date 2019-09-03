@@ -4,5 +4,5 @@ import FileDownload
 import XSS
 
 
-def attack():
+def attack(url):
     SQLInj.attack()
