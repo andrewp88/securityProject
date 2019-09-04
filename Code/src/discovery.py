@@ -4,7 +4,7 @@ import re
 
 
 activePlugins=[]
-vulnerablePlugins={"jtrt-responsive-tables":"SQL Injection, John","ad-manager-wd":"FileDownload","smartgooglecode":"SQL Injection"}
+vulnerablePlugins={"jtrt-responsive-tables":"SQL Injection, John","ad-manager-wd":"FileDownload","smartgooglecode":"XSS , Cookie Stealer","ultimate-product-catalogue":"SQL Injection"}
 
 
 def main(choice,pUrl):
@@ -20,7 +20,8 @@ def htmlPluginDiscovery(pUrl):
     pluginString = "^"+pUrl + "/wp-content/plugins/"
     scripts=soup.find_all('script', src=re.compile(pluginString))
     #print("scripts: ",scripts);
-    activePlugins.append(scripts[0]['src'].split("/")[7])
+    activePlugins.append(scripts[0]['src'].split("/")[6])
+    print("active plugins: " , activePlugins)
 
 
 def urlPluginDiscovery(path,pUrl):
