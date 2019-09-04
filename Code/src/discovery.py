@@ -4,7 +4,7 @@ import re
 
 
 activePlugins=[]
-vulnerablePlugins={"jtrt-responsive-tables":"SQL Injection, John","ad-manager-wd":"FileDownload","smartgooglecode":"XSS , Cookie Stealer","ultimate-product-catalogue":"SQL Injection"}
+vulnerablePlugins={"jtrt-responsive-tables":"SQL Injection, John","ad-manager-wd":"FileDownload","smartgooglecode":"XSS , Cookie Stealer","ultimate-product-catalogue":"SQL Injection","loginizer":"Stored XSS attack"}
 vulnerablePluginCopy={}
 
 def main(choice,pUrl):
@@ -33,6 +33,19 @@ def urlPluginDiscovery(path,pUrl):
         smartGoogleDiscover(response.text)
     elif (path=="jtrt-responsive-tables/public/css/"):
         jtrtTablesDiscover(response)
+    elif (path == "metronet-tag-manager/tinyMCE/"):
+        metronetTagmanager(response)
+    elif (path == "loginizer/ipv6/"):
+        loginizer(response)
+
+
+def loginizer(response):
+    if not response.status_code == 404:
+        activePlugins.append("loginizer")
+
+def metronetTagmanager(response):
+    if not response.status_code == 404:
+        activePlugins.append("metronet-tag-manager")
 
 
 
@@ -56,6 +69,8 @@ def pluginListGeneration(pUrl):
     htmlPluginDiscovery(pUrl)
     urlPluginDiscovery("smart-google-code-inserter/",pUrl)
     urlPluginDiscovery("jtrt-responsive-tables/public/css/",pUrl)
+    urlPluginDiscovery("metronet-tag-manager/tinyMCE/",pUrl)
+    urlPluginDiscovery("loginizer/ipv6/",pUrl)
     global vulnerablePluginCopy
     activePluginCopy=activePlugins.copy()
     vulnerablePluginCopy=vulnerablePlugins.copy()

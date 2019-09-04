@@ -36,7 +36,7 @@ def formatResponseLoginData(response,separator):
     return pairs
 
 def saveDataToFile(pairList):
-    file = input("Insert the path to the file where you want to save the login data")
+    file = input("Insert the path to the file where you want to save the login data: ")
     try:
         with open( file, "w",newline='') as the_file:
             csv.register_dialect("custom", delimiter=":", skipinitialspace=False)

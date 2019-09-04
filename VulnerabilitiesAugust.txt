@@ -14,3 +14,9 @@ https://www.exploit-db.com/exploits/43110 sql injection , sembra easy , every ki
 
 
 https://www.exploit-db.com/exploits/42263 sql injection , medium difficult, Functions\Process_Ajax.php , line 148 , works with every kind of user
+
+https://www.exploit-db.com/exploits/44632 XSS , form way, how can we use it?
+
+https://www.exploit-db.com/exploits/47184 XSS, stored, no theme download, theme hack , need particular conditions
+
+https://wpvulndb.com/vulnerabilities/9088 XSS , stored, unauthenticated , init.php line 500 circa

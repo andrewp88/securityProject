@@ -7,6 +7,8 @@ import AdManagerWd
 import SmartGoogleCodePlugin
 import JtrtResponsiveTables
 import ProductCatalogue
+import MetronetTagManager
+import Loginizer
 
 
 
@@ -68,7 +70,9 @@ def pluginChoice(choice):
         'ad-manager-wd': AdManagerWd.attack,
         'smartgooglecode': SmartGoogleCodePlugin.attack,
         'jtrt-responsive-tables': JtrtResponsiveTables.attack,
-        'ultimate-product-catalogue': ProductCatalogue.attack
+        'ultimate-product-catalogue': ProductCatalogue.attack,
+        'metronet-tag-manager': MetronetTagManager.attack,
+        'loginizer':Loginizer.attack
     }
     return switcher.get(choice, wrongPluginSelection)(url)
 
