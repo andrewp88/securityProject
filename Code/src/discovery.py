@@ -20,8 +20,10 @@ def htmlPluginDiscovery(pUrl):
     pluginString = "^"+pUrl + "/wp-content/plugins/"
     scripts=soup.find_all('script', src=re.compile(pluginString))
     #print("scripts: ",scripts);
-    activePlugins.append(scripts[0]['src'].split("/")[6])
-    print("active plugins: " , activePlugins)
+
+    stringSplitted=scripts[0]['src'].split("/")
+    i=stringSplitted.index("plugins")
+    activePlugins.append(stringSplitted[i+1])
 
 
 def urlPluginDiscovery(path,pUrl):

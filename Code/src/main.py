@@ -46,7 +46,7 @@ class Main():
 
         if(choice=='2'):
 
-            print("wordpress discovery")
+            print("this feature has not been implemented yet")
 
         if (SmartGoogleCodePlugin.processList):
             print("\n\nSome processes are running , do you want to close them?")
