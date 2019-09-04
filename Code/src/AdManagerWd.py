@@ -5,4 +5,7 @@ import XSS
 
 
 def attack(url):
-    SQLInj.attack()
+    print("File Download Attack. ")
+
+    FileDownload.attack(url)
+

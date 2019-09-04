@@ -61,9 +61,6 @@ def phpServerSetup(url):
     #C:\xampp\php>php -S 127.0.0.1:80 -t C:\xampp
 
 
-def phpServerStart(phpPath, filePath):
-
-
 
 def sendRequest(url,script):
     headers = {'content-ty  e': 'application/x-www-form-urlencoded', 'host': 'localhost'}
