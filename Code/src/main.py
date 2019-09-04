@@ -29,13 +29,20 @@ class Main():
         if(choice=='1'):
 
             vulnerablePlugins=discovery.main(choice,url)
-            n=int(input("\n Chooce which plugin to attack: "))
 
-            while(n>len(vulnerablePlugins)):
-                n=int(input("You have chosen an invalid option. Choose again: "))
-            pluginName=list(vulnerablePlugins)[n-1]
-            print(pluginName +"   lista plugin")
-            pluginChoice(pluginName)
+            n=int(input("\n Chooce which plugin to attack or digit 0 to esc : "))
+            while(not n==0):
+                while(n>len(vulnerablePlugins)):
+                    n=int(input("You have chosen an invalid option. Choose again: "))
+                pluginName=list(vulnerablePlugins)[n-1]
+
+                pluginChoice(pluginName)
+                print("----------------------------------------------------------------------------")
+                print("")
+                discovery.listPrint()
+                n=int(input("\n Attack completed! Choose another plugin to attack or digit 0 to esc: "))
+
+
 
         if(choice=='2'):
 
@@ -69,7 +76,6 @@ def wrongPluginSelection(url):
     choice=int(input("You have chosen an invalid option. Choose again: "))
     pluginName=list(vulnerablePlugins)[choice]
     pluginChoice(pluginName)
-
 
 
 

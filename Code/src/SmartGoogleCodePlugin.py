@@ -1,12 +1,7 @@
-import SQLInj
-import John
-import FileDownload
-import XSS
+
 import requests
 import subprocess
-from subprocess import PIPE
 import shutil
-import RequestForger
 
 processList = []
 

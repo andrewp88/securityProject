@@ -5,7 +5,7 @@ import re
 
 activePlugins=[]
 vulnerablePlugins={"jtrt-responsive-tables":"SQL Injection, John","ad-manager-wd":"FileDownload","smartgooglecode":"XSS , Cookie Stealer","ultimate-product-catalogue":"SQL Injection"}
-
+vulnerablePluginCopy={}
 
 def main(choice,pUrl):
     if(choice=='1'):
@@ -54,7 +54,7 @@ def pluginListGeneration(pUrl):
     htmlPluginDiscovery(pUrl)
     urlPluginDiscovery("smart-google-code-inserter/",pUrl)
     urlPluginDiscovery("jtrt-responsive-tables/public/css/",pUrl)
-
+    global vulnerablePluginCopy
     activePluginCopy=activePlugins.copy()
     vulnerablePluginCopy=vulnerablePlugins.copy()
 
@@ -71,6 +71,11 @@ def pluginListGeneration(pUrl):
         for z in activePluginCopy:
             print(z)
 
+    listPrint()
+
+    return vulnerablePluginCopy
+
+def listPrint():
     if len(vulnerablePluginCopy)!=0:
         print("\n Vulnerable Plugins: ")
         counter=1;
@@ -78,4 +83,3 @@ def pluginListGeneration(pUrl):
             string=str(counter)+ ": "+x +" --> Possible attacks: " + y
             print(string)
             counter+=1
-    return vulnerablePluginCopy
