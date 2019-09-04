@@ -15,7 +15,6 @@ def attack(url,session,header,data):
 
 
 def sqlInjection(url,session,header,data):
-    url = url + "/wp-admin/admin-ajax.php?action=get_upcp_subcategories"
     response = session.post(url, headers=header, data=data)
     return response
 
