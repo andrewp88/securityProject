@@ -17,4 +17,4 @@ def attack(url):
         password=input("Insert your password: ")
         result=LoginManager.login(url,username,password)
 
-    SQLInj.attack(path,LoginManager.session,headers,data)
+    SQLInj.attack(path,LoginManager.session,headers,data,":")
